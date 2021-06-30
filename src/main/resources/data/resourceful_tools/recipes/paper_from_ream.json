@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "resourceful_tools:ream_of_paper"
+        }
+    ],
+    "result": {
+        "item": "minecraft:paper",
+        "count": 9
+    }
+}

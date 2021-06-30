@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "resourceful_tools",
+  "version": "${version}",
+
+  "name": "Resourceful Tools",
+  "description": "A non-violent way to get mob drops",
+  "authors": [
+    "Kevin Pugh"
+  ],
+  "contact": {
+    "homepage": "",
+    "issues": "",
+    "sources": ""
+  },
+
+  "license": "MIT",
+  "icon": "assets/resourceful_tools/textures/item/hand_tiller.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.kwpugh.resourceful_tools.ResourcefulTools"
+    ]
+  },
+  "mixins": [
+    "resourceful_tools.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.11.3",
+    "fabric": "*",
+    "java": ">=16",
+    "minecraft": "1.17.x"
+  },
+  "suggests": {
+    "flamingo": "*"
+  }
+}

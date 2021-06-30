@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "AAA",
+        "AAA",
+        "AAA"
+    ],
+    "key": {
+        "A": {
+            "item": "minecraft:paper"
+        }
+    },
+    "result": {
+        "item": "resourceful_tools:ream_of_paper",
+        "count": 1
+    }
+}

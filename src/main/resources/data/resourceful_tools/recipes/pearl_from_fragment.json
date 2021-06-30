@@ -1,0 +1,24 @@
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+        " A ",
+        "A A",
+        " A "
+    ],
+    
+    "key":
+    {
+        "A":
+        {
+            "item": "resourceful_tools:pearl_fragment"
+        }
+    },
+    
+    "result":
+    {
+        "item": "minecraft:ender_pearl",
+        "count": 1
+    }
+}

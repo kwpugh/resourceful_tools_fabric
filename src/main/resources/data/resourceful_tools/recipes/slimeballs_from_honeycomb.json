@@ -1,0 +1,18 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "minecraft:honeycomb"
+        },
+        {
+            "item": "minecraft:green_dye"
+        },
+        {
+            "item": "resourceful_tools:powder_saltpeter"
+        }
+    ],
+    "result": {
+        "item": "minecraft:slime_ball",
+        "count": 2
+    }
+}

@@ -1,0 +1,28 @@
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+        "BBB",
+        " A ",
+        " A "
+    ],
+    
+    "key":
+    {
+        "A":
+        {
+            "item": "minecraft:stick"
+        },
+        "B":
+        {
+            "tag": "c:stones"
+        }
+    },
+    
+    "result":
+    {
+        "item": "minecraft:stone_pickaxe",
+        "count": 1
+    }
+}

@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "resourceful_tools:granite_single"
+        }
+    ],
+    "result": {
+        "item": "minecraft:granite",
+        "count": 9
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "tag": "resourceful_tools:crack_hammers"
+        },
+        {
+            "item": "minecraft:ancient_debris"
+        }
+    ],
+    "result": {
+        "item": "resourceful_tools:powder_netherite",
+        "count": 2
+    }
+}

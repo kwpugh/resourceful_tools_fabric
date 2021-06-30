@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "resourceful_tools:gravel_single"
+        }
+    ],
+    "result": {
+        "item": "minecraft:gravel",
+        "count": 9
+    }
+}

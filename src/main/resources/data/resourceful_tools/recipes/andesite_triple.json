@@ -1,0 +1,24 @@
+{
+    "type": "minecraft:crafting_shaped",
+
+    "pattern":
+    [
+        "AAA",
+        "AAA",
+        "AAA"
+    ],
+
+    "key":
+    {
+        "A":
+        {
+            "item": "resourceful_tools:andesite_double"
+        }
+    },
+
+    "result":
+    {
+        "item": "resourceful_tools:andesite_triple",
+        "count": 1
+    }
+}

@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "resourceful_tools:cobblestone_single"
+        }
+    ],
+    "result": {
+        "item": "minecraft:cobblestone",
+        "count": 9
+    }
+}

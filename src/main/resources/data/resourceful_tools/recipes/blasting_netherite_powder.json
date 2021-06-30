@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "ingredient": {
+    "item": "resourceful_tools:powder_netherite"
+  },
+  "result": "minecraft:netherite_scrap",
+  "experience": 0.35,
+  "cookingtime": 200
+}

@@ -1,0 +1,28 @@
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+        "BB ",
+        "BA ",
+        " A "
+    ],
+    
+    "key":
+    {
+        "A":
+        {
+            "item": "minecraft:stick"
+        },
+        "B":
+        {
+            "tag": "c:stones"
+        }
+    },
+    
+    "result":
+    {
+        "item": "minecraft:stone_axe",
+        "count": 1
+    }
+}

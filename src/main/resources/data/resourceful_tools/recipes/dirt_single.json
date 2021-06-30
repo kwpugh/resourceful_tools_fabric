@@ -1,0 +1,24 @@
+{
+    "type": "minecraft:crafting_shaped",
+
+    "pattern":
+    [
+        "AAA",
+        "AAA",
+        "AAA"
+    ],
+
+    "key":
+    {
+        "A":
+        {
+            "item": "minecraft:dirt"
+        }
+    },
+
+    "result":
+    {
+        "item": "resourceful_tools:dirt_single",
+        "count": 1
+    }
+}

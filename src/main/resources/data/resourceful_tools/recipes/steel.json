@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "AA ",
+    "BB ",
+    "   "
+  ],
+
+  "key":
+  {
+    "A":
+    {
+      "tag": "c:iron_dusts"
+    },
+    "B":
+    {
+      "tag": "c:coal_dusts"
+    }
+  },
+
+  "result":
+  {
+    "item": "resourceful_tools:powder_steel",
+    "count": 2
+  }
+}

@@ -1,0 +1,24 @@
+{
+    "type": "minecraft:crafting_shaped",
+
+    "pattern":
+    [
+        "AAA",
+        "AAA",
+        "AAA"
+    ],
+
+    "key":
+    {
+        "A":
+        {
+            "item": "minecraft:diorite"
+        }
+    },
+
+    "result":
+    {
+        "item": "resourceful_tools:diorite_single",
+        "count": 1
+    }
+}

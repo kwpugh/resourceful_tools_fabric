@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "resourceful_tools:netherrack_single"
+        }
+    ],
+    "result": {
+        "item": "minecraft:netherrack",
+        "count": 9
+    }
+}

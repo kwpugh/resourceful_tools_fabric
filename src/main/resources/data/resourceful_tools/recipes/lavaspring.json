@@ -1,0 +1,28 @@
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+        "AAA",
+        "ABA",
+        "AAA"
+    ],
+    
+    "key":
+    {
+        "A":
+        {
+            "item": "minecraft:lava_bucket"
+        },
+        "B":
+        {
+            "item": "minecraft:black_concrete"
+        }
+    },
+    
+    "result":
+    {
+        "item": "resourceful_tools:lavaspring",
+        "count": 1
+    }
+}

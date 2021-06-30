@@ -1,0 +1,6 @@
+{
+    "variants":
+    {
+        "": { "model": "resourceful_tools:block/cobblestone_single" }
+    }
+}

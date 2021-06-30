@@ -1,0 +1,8 @@
+{
+    "parent": "block/orientable",
+    "textures": {
+        "top": "resourceful_tools:block/cobblegen_top",
+        "front": "resourceful_tools:block/waterwell_front",
+        "side": "resourceful_tools:block/cobblegen_side1"
+    }
+}

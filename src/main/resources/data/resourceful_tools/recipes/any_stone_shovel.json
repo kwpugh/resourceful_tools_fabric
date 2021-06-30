@@ -1,0 +1,28 @@
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+        " B ",
+        " A ",
+        " A "
+    ],
+    
+    "key":
+    {
+        "A":
+        {
+            "item": "minecraft:stick"
+        },
+        "B":
+        {
+            "tag": "c:stones"
+        }
+    },
+    
+    "result":
+    {
+        "item": "minecraft:stone_shovel",
+        "count": 1
+    }
+}

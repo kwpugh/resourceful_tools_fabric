@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "ingredient": {
+    "item": "resourceful_tools:powder_copper"
+  },
+  "result": "minecraft:copper_ingot",
+  "experience": 0.35,
+  "cookingtime": 200
+}

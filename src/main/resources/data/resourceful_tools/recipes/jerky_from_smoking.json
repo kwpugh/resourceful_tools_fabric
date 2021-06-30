@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smoking",
+  "ingredient": {
+    "item": "minecraft:rotten_flesh"
+  },
+  "result": "resourceful_tools:jerky",
+  "experience": 0,
+  "cookingtime": 100
+}

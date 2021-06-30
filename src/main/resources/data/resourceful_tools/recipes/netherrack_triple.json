@@ -1,0 +1,24 @@
+{
+    "type": "minecraft:crafting_shaped",
+
+    "pattern":
+    [
+        "AAA",
+        "AAA",
+        "AAA"
+    ],
+
+    "key":
+    {
+        "A":
+        {
+            "item": "resourceful_tools:netherrack_double"
+        }
+    },
+
+    "result":
+    {
+        "item": "resourceful_tools:netherrack_triple",
+        "count": 1
+    }
+}

@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "resourceful_tools:crack_hammers"
+    },
+    {
+      "tag": "c:tin_ores"
+    }
+  ],
+  "result": {
+    "item": "resourceful_tools:powder_tin",
+    "count": 2
+  }
+}

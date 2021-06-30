@@ -1,0 +1,24 @@
+{
+    "type": "minecraft:crafting_shaped",
+
+    "pattern":
+    [
+        "AAA",
+        "AAA",
+        "AAA"
+    ],
+
+    "key":
+    {
+        "A":
+        {
+            "item": "resourceful_tools:gravel_double"
+        }
+    },
+
+    "result":
+    {
+        "item": "resourceful_tools:gravel_triple",
+        "count": 1
+    }
+}

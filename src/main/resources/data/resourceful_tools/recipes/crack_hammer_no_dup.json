@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "resourceful_tools:crack_hammers"
+    },
+    {
+      "tag": "resourceful_tools:crack_hammers"
+    }
+  ],
+  "result": {
+    "item": "minecraft:wheat_seeds",
+    "count": 1
+  }
+}

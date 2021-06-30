@@ -1,0 +1,24 @@
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+        "AAA",
+        "AAA",
+        "AAA"
+    ],
+    
+    "key":
+    {
+        "A":
+        {
+            "item": "resourceful_tools:ghast_tear_fragment"
+        }
+    },
+    
+    "result":
+    {
+        "item": "minecraft:ghast_tear",
+        "count": 1
+    }
+}
