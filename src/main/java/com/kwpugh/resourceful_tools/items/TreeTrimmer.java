@@ -38,6 +38,8 @@ public class TreeTrimmer extends ShovelItem
 	static double darkoak = ResourcefulTools.CONFIG.GENERAL.darkOakDropChance;
 	static double seagrass = ResourcefulTools.CONFIG.GENERAL.seagrassDropChance;
 	static double kelp = ResourcefulTools.CONFIG.GENERAL.kelpDropChance;
+	static double egg = ResourcefulTools.CONFIG.GENERAL.eggDropChance;
+
 	Random random = new Random();
 
 	public boolean postMine(ItemStack stack, World world, BlockState state, BlockPos pos, LivingEntity entity)
@@ -141,7 +143,19 @@ public class TreeTrimmer extends ShovelItem
 		        {
 		        	world.spawnEntity(new ItemEntity(world, pos.getX(), pos.getY(), pos.getZ(), new ItemStack(Items.PRISMARINE_SHARD, 1)));
 		        }	
-			}				
+			}
+			else if(block == Blocks.HAY_BLOCK)
+			{
+				stack.damage(1, entity, (p_220038_0_) -> {
+					p_220038_0_.sendEquipmentBreakStatus(EquipmentSlot.MAINHAND);
+				});
+
+				double r = random.nextDouble();
+				if (r <= egg)
+				{
+					world.spawnEntity(new ItemEntity(world, pos.getX(), pos.getY(), pos.getZ(), new ItemStack(Items.EGG, 1)));
+				}
+			}
 
 			if(!(block == Blocks.SPRUCE_LEAVES) || 
 					!(block == Blocks.BIRCH_LEAVES) || 

@@ -70,7 +70,7 @@ public class ResourcefulToolsConfig extends PartitioningSerializer.GlobalData
 		public double darkOakDropChance = .05D;
 		public double seagrassDropChance = .05D;
 		public double kelpDropChance = .05D;
-		public double eggDropChance = .10D;
+		public double eggDropChance = .35D;
 
 		@Comment("\n"
 				+"\n"
