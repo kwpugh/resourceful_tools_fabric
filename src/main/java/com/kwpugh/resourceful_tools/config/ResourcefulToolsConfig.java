@@ -27,7 +27,7 @@ public class ResourcefulToolsConfig extends PartitioningSerializer.GlobalData
     			+"\n"
     			+"******************************"
     			+"\nCRACK HAMMERS"
-    			+"\n******************************")		
+    			+"\n******************************")
 		public int ironHammerDurability = 129;
     	public int diamondHammerDurability = 516;
 
@@ -76,14 +76,27 @@ public class ResourcefulToolsConfig extends PartitioningSerializer.GlobalData
 				+"\n"
 				+"\n"
 				+"******************************"
-				+"\nBASIC TOOL MATERIAL"
+				+"\nIRON TOOL MATERIAL"
 				+"\n- Handpick, Hand Tiller, & Hand Trimmer"
 				+"\n******************************")
-		public int basicDurability = 250;
-		public float basicMiningSpeed = 1.0F;
-		public float basicAttackDamage = 1.0F;
-		public int basicMiningLevel = 2;
-		public int basicEnchantability = 8;
+		public int ironDurability = 250;
+		public float ironMiningSpeed = 1.0F;
+		public float ironAttackDamage = 1.0F;
+		public int ironMiningLevel = 2;
+		public int ironEnchantability = 8;
+
+		@Comment("\n"
+				+"\n"
+				+"\n"
+				+"******************************"
+				+"\nCOPPER TOOL MATERIAL"
+				+"\n- Handpick, Hand Tiller, & Hand Trimmer"
+				+"\n******************************")
+		public int copperDurability = 125;
+		public float copperMiningSpeed = 1.0F;
+		public float copperAttackDamage = 1.0F;
+		public int copperMiningLevel = 2;
+		public int copperEnchantability = 8;
 	}
 
 

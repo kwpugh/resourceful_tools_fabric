@@ -5,13 +5,13 @@ import net.minecraft.item.Items;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.recipe.Ingredient;
 
-public class BasicToolMaterial implements ToolMaterial
+public class IronToolMaterial implements ToolMaterial
 {
-    private static int durability = ResourcefulTools.CONFIG.GENERAL.basicDurability;
-    private static float miningSpeed = ResourcefulTools.CONFIG.GENERAL.basicMiningSpeed;
-    private static float attackDamage = ResourcefulTools.CONFIG.GENERAL.basicAttackDamage;
-    private static int miningLevel = ResourcefulTools.CONFIG.GENERAL.basicMiningLevel;
-    private static int enchantability = ResourcefulTools.CONFIG.GENERAL.basicEnchantability;
+    private static int durability = ResourcefulTools.CONFIG.GENERAL.ironDurability;
+    private static float miningSpeed = ResourcefulTools.CONFIG.GENERAL.ironMiningSpeed;
+    private static float attackDamage = ResourcefulTools.CONFIG.GENERAL.ironAttackDamage;
+    private static int miningLevel = ResourcefulTools.CONFIG.GENERAL.ironMiningLevel;
+    private static int enchantability = ResourcefulTools.CONFIG.GENERAL.ironEnchantability;
 
     @Override
     public int getDurability()

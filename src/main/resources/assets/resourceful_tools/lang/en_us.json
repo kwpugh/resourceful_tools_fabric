@@ -79,6 +79,7 @@
 	"item.resourceful_tools.hand_tiller": "Hand Tiller",
 	"item.resourceful_tools.hand_tiller.line1":"Used to obtain resources from Clay and Gravel",
 
+	"item.resourceful_tools.hook_knife_copper": "Copper Hook Knife",
 	"item.resourceful_tools.hook_knife": "Hook Knife",
 	"item.resourceful_tools.hook_knife.line1": "Used to get string from Sheep without harming",
 	"item.resourceful_tools.hook_knife.line2": "Use on wool blocks to drop string",
@@ -87,15 +88,17 @@
 	"item.resourceful_tools.hand_pick.line1":"Used to obtain resources from several types of stones",
 
 	"item.resourceful_tools.tree_trimmer": "Hand Trimmer",
+	"item.resourceful_tools.tree_trimmer_copper": "Copper Hand Trimmer",
 	"item.resourceful_tools.tree_trimmer.line1": "Used to obtain resources from tree leaves and sea plants",
 
 	"item.resourceful_tools.trash_can": "Trash Can",
 	"item.resourceful_tools.trash_can.line1": "Warning, items will be lost when GUI closed",
 
 	"item.resourceful_tools.crack_hammer": "Crack Hammer",
-	"item.resourceful_tools.crack_hammer.line1": "Used in a crafting table to make ore powders",
 	"item.resourceful_tools.diamond_crack_hammer": "Diamond Crack Hammer",
+	"item.resourceful_tools.crack_hammer.line1": "Used in a crafting table to make ore powders",
 
+	"item.resourceful_tools.copper_nugget": "Copper Nugget",
 	"item.resourceful_tools.powder_carbon": "Carbon Powder",
 	"item.resourceful_tools.powder_iron": "Iron Powder",
 	"item.resourceful_tools.powder_gold": "Gold Powder",
