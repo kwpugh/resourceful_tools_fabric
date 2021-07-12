@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "AAA",
+    "AAA",
+    "AAA"
+  ],
+
+  "key":
+  {
+    "A":
+    {
+      "item": "resourceful_tools:copper_nugget"
+    }
+  },
+
+  "result":
+  {
+    "item": "minecraft:copper_ingot",
+    "count": 1
+  }
+}

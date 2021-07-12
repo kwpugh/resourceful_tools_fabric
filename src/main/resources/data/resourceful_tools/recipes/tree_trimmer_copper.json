@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    " CC",
+    " A ",
+    "A  "
+  ],
+
+  "key":
+  {
+    "A":
+    {
+      "item": "minecraft:stick"
+    },
+    "C":
+    {
+      "tag": "c:copper_nuggets"
+    }
+  },
+
+  "result":
+  {
+    "item": "resourceful_tools:tree_trimmer_copper",
+    "count": 1
+  }
+}
