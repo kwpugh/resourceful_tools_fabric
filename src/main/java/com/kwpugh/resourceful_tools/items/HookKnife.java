@@ -2,6 +2,7 @@ package com.kwpugh.resourceful_tools.items;
 
 import java.util.List;
 
+import com.kwpugh.pugh_lib.api.CustomRecipeRemainder;
 import com.kwpugh.resourceful_tools.init.ItemInit;
 
 import net.minecraft.block.Block;
@@ -26,13 +27,33 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Vec3d;
 import net.minecraft.world.World;
 
-public class HookKnife extends Item
+public class HookKnife extends Item implements CustomRecipeRemainder
 {
 	public HookKnife(Settings settings)
 	{
 		super(settings);
 	}
-	   
+
+	@Override
+	public boolean hasRecipeRemainder()
+	{
+		return true;
+	}
+
+	@Override
+	public ItemStack getRecipeRemainder(ItemStack stackIn)
+	{
+		ItemStack stack = stackIn.copy();
+		stack.setDamage(stack.getDamage() + 1);
+
+		if(stack.getDamage() >= stack.getMaxDamage())
+		{
+			stack.decrement(1);
+		}
+
+		return stack;
+	}
+
 	@Override
 	public ActionResult useOnBlock(ItemUsageContext context)
 	{

@@ -79,6 +79,10 @@
 	"item.resourceful_tools.hand_tiller": "Hand Tiller",
 	"item.resourceful_tools.hand_tiller.line1":"Used to obtain resources from Clay and Gravel",
 
+	"item.resourceful_tools.clam_digger": "Clam Digger",
+	"item.resourceful_tools.clam_digger.line1":"Used to dig clams from Sand",
+	"item.resourceful_tools.clam_digger.line2":"Must be used on a beach near an Ocean biome",
+
 	"item.resourceful_tools.hook_knife_copper": "Copper Hook Knife",
 	"item.resourceful_tools.hook_knife": "Hook Knife",
 	"item.resourceful_tools.hook_knife.line1": "Used to get string from Sheep without harming",
@@ -121,8 +125,11 @@
 	"item.resourceful_tools.bamboo_sheet": "Bamboo Sheet",
 	"item.resourceful_tools.large_bamboo_sheet": "Large Bamboo Sheet",
 
-	"item.resourceful_tools.jerky": "Zombie Jerky",
+	"item.resourceful_tools.jerky": "Smoked Jerky",
 	"item.resourceful_tools.ream_of_paper": "Ream of Paper",
+	"item.resourceful_tools.clam": "Clam",
+	"item.resourceful_tools.raw_clam": "Raw Clam",
+	"item.resourceful_tools.cooked_clam": "Smoked Clam",
 
 	"block.resourceful_tools.wellspring": "Well Spring",
 	"item.resourceful_tools.wellspring": "Well Spring",

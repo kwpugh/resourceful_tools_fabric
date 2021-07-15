@@ -12,7 +12,22 @@ public class ResourcefulToolsConfig extends PartitioningSerializer.GlobalData
     	
     @Config(name = "general")
 	public static class General implements ConfigData
-	{       		
+	{
+		@Comment("\n"
+				+"\n"
+				+"\n"
+				+"******************************"
+				+"\nENABLE/DISABLE TOOLS"
+				+"\n******************************")
+		public boolean enableHookKnife = true;
+		public boolean enableTreeTrimmer = true;
+		public boolean enableHandPick = true;
+		public boolean enableHandTiller = true;
+		public boolean enableClamDigger = true;
+		public boolean enableCrackHammer = true;
+		public boolean enableGlassPlacer = true;
+		public boolean enableTrashCan = true;
+
     	@Comment("\n"
     			+"\n"
     			+"\n"
@@ -54,6 +69,15 @@ public class ResourcefulToolsConfig extends PartitioningSerializer.GlobalData
 				+"\n******************************")
 		public double clayDropChance = .20D;
 		public double gravelDropChance = .20D;
+
+		@Comment("\n"
+				+"\n"
+				+"\n"
+				+"******************************"
+				+"\nClam Digger"
+				+"\n- drop chance value between 0.0-1.0"
+				+"\n******************************")
+		public double clamDropChance = .80D;
 
 		@Comment("\n"
 				+"\n"

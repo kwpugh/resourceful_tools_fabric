@@ -2,13 +2,7 @@ package com.kwpugh.resourceful_tools.init;
 
 import com.kwpugh.resourceful_tools.ResourcefulTools;
 import com.kwpugh.resourceful_tools.foods.FoodList;
-import com.kwpugh.resourceful_tools.items.CrackHammer;
-import com.kwpugh.resourceful_tools.items.GlassPlacer;
-import com.kwpugh.resourceful_tools.items.HandPick;
-import com.kwpugh.resourceful_tools.items.HandTiller;
-import com.kwpugh.resourceful_tools.items.HookKnife;
-import com.kwpugh.resourceful_tools.items.TrashCan;
-import com.kwpugh.resourceful_tools.items.TreeTrimmer;
+import com.kwpugh.resourceful_tools.items.*;
 
 import com.kwpugh.resourceful_tools.materials.CopperToolMaterial;
 import com.kwpugh.resourceful_tools.materials.IronToolMaterial;
@@ -21,17 +15,25 @@ public class ItemInit
 {
 	static int ironHammerDurability = ResourcefulTools.CONFIG.GENERAL.ironHammerDurability;
 	static int diamondHammerDurability = ResourcefulTools.CONFIG.GENERAL.diamondHammerDurability;
+	static boolean enableHookKnife = ResourcefulTools.CONFIG.GENERAL.enableHookKnife;
+	static boolean enableTreeTrimmer = ResourcefulTools.CONFIG.GENERAL.enableTreeTrimmer;
+	static boolean enableHandTiller = ResourcefulTools.CONFIG.GENERAL.enableHandTiller;
+	static boolean enableHandPick = ResourcefulTools.CONFIG.GENERAL.enableHandPick;
+	static boolean enableCrackHammer = ResourcefulTools.CONFIG.GENERAL.enableCrackHammer;
+	static boolean enableClamDigger = ResourcefulTools.CONFIG.GENERAL.enableClamDigger;
+	static boolean enableGlassPlacer = ResourcefulTools.CONFIG.GENERAL.enableGlassPlacer;
+	static boolean enableTrashCan = ResourcefulTools.CONFIG.GENERAL.enableTrashCan;
 
 	public static final ToolMaterial IRON_TOOL_MATERIAL = new IronToolMaterial();
 	public static final ToolMaterial COPPER_TOOL_MATERIAL = new CopperToolMaterial();
 
-	public static final Item HOOK_KNIFE_COPPER = new HookKnife(new Item.Settings().group(ResourcefulTools.RESOURCEFUL_TOOLS_GROUP));
-	public static final Item TREE_TRIMMER_COPPER = new TreeTrimmer(COPPER_TOOL_MATERIAL, 0, -2.8F, new Item.Settings().group(ResourcefulTools.RESOURCEFUL_TOOLS_GROUP));
-
-	public static final Item HAND_TILLER = new HandTiller(IRON_TOOL_MATERIAL, 0.0F, -2.8F, new Item.Settings().group(ResourcefulTools.RESOURCEFUL_TOOLS_GROUP));
-	public static final Item HAND_PICK = new HandPick(IRON_TOOL_MATERIAL, 0, -2.8F, new Item.Settings().group(ResourcefulTools.RESOURCEFUL_TOOLS_GROUP));
-	public static final Item TREE_TRIMMER = new TreeTrimmer(IRON_TOOL_MATERIAL, 0, -2.8F, new Item.Settings().group(ResourcefulTools.RESOURCEFUL_TOOLS_GROUP));
 	public static final Item HOOK_KNIFE = new HookKnife(new Item.Settings().group(ResourcefulTools.RESOURCEFUL_TOOLS_GROUP));
+	public static final Item HOOK_KNIFE_COPPER = new HookKnife(new Item.Settings().group(ResourcefulTools.RESOURCEFUL_TOOLS_GROUP));
+	public static final Item TREE_TRIMMER = new TreeTrimmer(IRON_TOOL_MATERIAL, 0, -2.8F, new Item.Settings().group(ResourcefulTools.RESOURCEFUL_TOOLS_GROUP));
+	public static final Item TREE_TRIMMER_COPPER = new TreeTrimmer(COPPER_TOOL_MATERIAL, 0, -2.8F, new Item.Settings().group(ResourcefulTools.RESOURCEFUL_TOOLS_GROUP));
+	public static final Item HAND_TILLER = new HandTiller(IRON_TOOL_MATERIAL, 0.0F, -2.8F, new Item.Settings().group(ResourcefulTools.RESOURCEFUL_TOOLS_GROUP));
+	public static final Item CLAIM_DIGGER = new ClamDigger(IRON_TOOL_MATERIAL, 0.0F, -2.8F, new Item.Settings().group(ResourcefulTools.RESOURCEFUL_TOOLS_GROUP));
+	public static final Item HAND_PICK = new HandPick(IRON_TOOL_MATERIAL, 0, -2.8F, new Item.Settings().group(ResourcefulTools.RESOURCEFUL_TOOLS_GROUP));
 	public static final Item GLASS_PLACER = new GlassPlacer(new Item.Settings().maxCount(1).maxDamage(64).group(ResourcefulTools.RESOURCEFUL_TOOLS_GROUP));
 	public static final Item TRASH_CAN = new TrashCan(new Item.Settings().group(ResourcefulTools.RESOURCEFUL_TOOLS_GROUP));
  
@@ -62,21 +64,50 @@ public class ItemInit
 
 	public static final Item JERKY = new Item(new Item.Settings().food(FoodList.jerky).group(ResourcefulTools.RESOURCEFUL_TOOLS_GROUP));
 	public static final Item REAM_OF_PAPER = new Item(new Item.Settings().group(ResourcefulTools.RESOURCEFUL_TOOLS_GROUP));
+	public static final Item CLAM = new Item(new Item.Settings().group(ResourcefulTools.RESOURCEFUL_TOOLS_GROUP));
+	public static final Item RAW_CLAM = new Item(new Item.Settings().group(ResourcefulTools.RESOURCEFUL_TOOLS_GROUP));
+	public static final Item COOKED_CLAM = new Item(new Item.Settings().food(FoodList.cooked_clam).group(ResourcefulTools.RESOURCEFUL_TOOLS_GROUP));
 	 
 	public static void registerItems()
 	{
-		Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "hook_knife_copper"), HOOK_KNIFE_COPPER);
-		Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "tree_trimmer_copper"), TREE_TRIMMER_COPPER);
+		if(enableHookKnife)
+		{
+			Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "hook_knife"), HOOK_KNIFE);
+			Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "hook_knife_copper"), HOOK_KNIFE_COPPER);
+		}
 
-		Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "hand_tiller"), HAND_TILLER);
-		Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "hand_pick"), HAND_PICK);
-		Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "tree_trimmer"), TREE_TRIMMER);
-		Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "hook_knife"), HOOK_KNIFE);
-		Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "glass_placer"), GLASS_PLACER);
-		Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "trash_can"), TRASH_CAN);
-	 
-		Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "crack_hammer"), CRACK_HAMMER);
-		Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "diamond_crack_hammer"), DIAMOND_CRACK_HAMMER);
+		if(enableTreeTrimmer)
+		{
+			Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "tree_trimmer"), TREE_TRIMMER);
+			Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "tree_trimmer_copper"), TREE_TRIMMER_COPPER);
+		}
+
+		if(enableHandTiller)
+		{
+			Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "hand_tiller"), HAND_TILLER);
+		}
+
+		if(enableClamDigger)
+		{
+			Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "clam_digger"), CLAIM_DIGGER);
+		}
+
+		if(enableHandPick)
+		{
+			Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "hand_pick"), HAND_PICK);
+		}
+
+		if(enableGlassPlacer)
+		{
+			Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "glass_placer"), GLASS_PLACER);
+		}
+
+		if(enableCrackHammer)
+		{
+			Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "diamond_crack_hammer"), DIAMOND_CRACK_HAMMER);
+			Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "crack_hammer"), CRACK_HAMMER);
+		}
+
 		Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "copper_nugget"), COPPER_NUGGET);
 		Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "powder_carbon"), POWDER_CARBON);
 		Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "powder_iron"), POWDER_IRON);
@@ -101,6 +132,14 @@ public class ItemInit
 		Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "large_bamboo_sheet"), LARGE_BAMBOO_SHEET);
 
 		Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "jerky"), JERKY);
+		Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "clam"), CLAM);
+		Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "raw_clam"), RAW_CLAM);
+		Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "cooked_clam"), COOKED_CLAM);
 		Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "ream_of_paper"), REAM_OF_PAPER);
+
+		if(enableTrashCan)
+		{
+			Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "trash_can"), TRASH_CAN);
+		}
 	} 
 }
