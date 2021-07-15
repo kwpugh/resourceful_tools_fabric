@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "resourceful_tools:clam"
+    }
+  ],
+  "result": {
+    "item": "resourceful_tools:raw_clam",
+    "count": 1
+  }
+}

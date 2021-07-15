@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "  C",
+    " B ",
+    "A  "
+  ],
+
+  "key":
+  {
+    "A":
+    {
+      "item": "minecraft:stick"
+    },
+    "B":
+    {
+      "item": "minecraft:iron_nugget"
+    },
+    "C":
+    {
+      "item": "minecraft:flint"
+    }
+  },
+
+  "result":
+  {
+    "item": "resourceful_tools:clam_digger",
+    "count": 1
+  }
+}
