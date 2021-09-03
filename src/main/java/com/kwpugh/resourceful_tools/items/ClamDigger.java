@@ -6,7 +6,7 @@ import java.util.Random;
 import com.kwpugh.resourceful_tools.ResourcefulTools;
 import com.kwpugh.resourceful_tools.init.ItemInit;
 
-import net.fabricmc.fabric.impl.biome.InternalBiomeUtils;
+//import net.fabricmc.fabric.impl.biome.InternalBiomeUtils;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
@@ -14,9 +14,7 @@ import net.minecraft.client.item.TooltipContext;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.ItemEntity;
 import net.minecraft.entity.LivingEntity;
-import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.Items;
 import net.minecraft.item.ShovelItem;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.text.Text;
@@ -25,7 +23,6 @@ import net.minecraft.util.Formatting;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import net.minecraft.world.biome.Biome;
-import net.minecraft.world.biome.BiomeKeys;
 
 public class ClamDigger extends ShovelItem
 {
@@ -42,7 +39,8 @@ public class ClamDigger extends ShovelItem
     {
         Biome currentBiome = world.getBiome(pos);
 
-        if(!world.isClient && (currentBiome.getCategory() == Biome.Category.BEACH) && InternalBiomeUtils.neighborsOcean(10, 10, 10, 10))
+        //if(!world.isClient && (currentBiome.getCategory() == Biome.Category.BEACH) && InternalBiomeUtils.neighborsOcean(10, 10, 10, 10))
+        if(!world.isClient && (currentBiome.getCategory() == Biome.Category.BEACH))
         {
             Block block = state.getBlock();
 
