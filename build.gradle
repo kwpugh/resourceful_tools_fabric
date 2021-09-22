@@ -1,5 +1,5 @@
 plugins {
-	id 'fabric-loom' version '0.9-SNAPSHOT'
+	id 'fabric-loom' version '0.10-SNAPSHOT'
 	id 'maven-publish'
 }
 
@@ -36,13 +36,13 @@ dependencies {
 		exclude(group: "net.fabricmc.fabric-api")
 	}
 
-	// REI
-	modCompileOnly "me.shedaniel:RoughlyEnoughItems-api-fabric:6.0.251-alpha"
-	modRuntime "me.shedaniel:RoughlyEnoughItems-fabric:6.0.251-alpha"
+//	// REI
+//	modCompileOnly "me.shedaniel:RoughlyEnoughItems-api-fabric:6.0.251-alpha"
+//	modRuntime "me.shedaniel:RoughlyEnoughItems-fabric:6.0.251-alpha"
 
     //Pughlib for common mixin
-    include "com.kwpugh:pugh_lib_fabric_1.18:1.2.0"
-    modImplementation "com.kwpugh:pugh_lib_fabric_1.18:1.2.0"
+    include "com.kwpugh:pugh_lib_fabric_1.18-snapshot:1.2.1"
+    modImplementation "com.kwpugh:pugh_lib_fabric_1.18-snapshot:1.2.1"
 }
 
 processResources {
