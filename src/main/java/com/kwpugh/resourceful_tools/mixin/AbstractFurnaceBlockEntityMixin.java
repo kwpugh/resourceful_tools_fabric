@@ -23,7 +23,7 @@ abstract class AbstractFurnaceBlockEntityMixin extends BlockEntity
     @Shadow private int cookTime;
     @Shadow private int cookTimeTotal;
 
-    //static boolean lavaPowersFurnace = ResourcefulTools.CONFIG.GENERAL.lavaPowersFurnace;
+    boolean lavaPowersFurnace = ResourcefulTools.CONFIG.GENERAL.laveSpringPowerFurnace;
 
     public AbstractFurnaceBlockEntityMixin(BlockEntityType<?> type, BlockPos pos, BlockState state)
     {
@@ -33,7 +33,7 @@ abstract class AbstractFurnaceBlockEntityMixin extends BlockEntity
     @Inject(method = "isBurning", at = @At("RETURN"))
     public void isBurning(CallbackInfoReturnable<Boolean> cir)
     {
-        if (world != null && !world.isClient)
+        if (world != null && !world.isClient && lavaPowersFurnace)
     	{
     	    // if next to a furnace, blast furnace, or smoker, keep fuel constant and speed up process
     		if( (this.world.getBlockState(this.pos.north()).getBlock() instanceof LavaSource)  ||

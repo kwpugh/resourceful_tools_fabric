@@ -36,6 +36,7 @@ public class ResourcefulToolsConfig extends PartitioningSerializer.GlobalData
     			+"\n******************************")
     	public boolean enableLavaSpring = true;
 		public boolean enableWellSpring = true;
+		public boolean laveSpringPowerFurnace = true;
 		
     	@Comment("\n"
     			+"\n"
