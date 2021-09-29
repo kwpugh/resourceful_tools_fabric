@@ -41,8 +41,8 @@ dependencies {
 //	modRuntime "me.shedaniel:RoughlyEnoughItems-fabric:6.0.251-alpha"
 
     //Pughlib for common mixin
-    include "com.kwpugh:pugh_lib_fabric_1.18-snapshot:1.2.2"
-    modImplementation "com.kwpugh:pugh_lib_fabric_1.18-snapshot:1.2.2"
+    include "com.kwpugh:pugh_lib_fabric_1.18-snapshot:1.2.3"
+    modImplementation "com.kwpugh:pugh_lib_fabric_1.18-snapshot:1.2.3"
 }
 
 processResources {
