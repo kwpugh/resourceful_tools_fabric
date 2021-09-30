@@ -1,0 +1,24 @@
+{
+    "type": "minecraft:crafting_shaped",
+
+    "pattern":
+    [
+        "AAA",
+        "AAA",
+        "AAA"
+    ],
+
+    "key":
+    {
+        "A":
+        {
+            "item": "minecraft:cobbled_deepslate"
+        }
+    },
+
+    "result":
+    {
+        "item": "resourceful_tools:cobbled_deepslate_single",
+        "count": 1
+    }
+}

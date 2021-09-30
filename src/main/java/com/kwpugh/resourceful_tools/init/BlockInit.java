@@ -48,7 +48,15 @@ public class BlockInit
 	public static final Block NETHERRACK_SINGLE = new Block(FabricBlockSettings.of(Material.STONE).strength(3.0F, 3.0F));
 	public static final Block NETHERRACK_DOUBLE = new Block(FabricBlockSettings.of(Material.STONE).strength(3.0F, 3.0F));
 	public static final Block NETHERRACK_TRIPLE = new Block(FabricBlockSettings.of(Material.STONE).strength(3.0F, 3.0F));
-	
+
+	public static final Block COBBLED_DEEPSLATE_SINGLE = new Block(FabricBlockSettings.of(Material.STONE).strength(3.0F, 3.0F));
+	public static final Block COBBLED_DEEPSLATE_DOUBLE = new Block(FabricBlockSettings.of(Material.STONE).strength(3.0F, 3.0F));
+	public static final Block COBBLED_DEEPSLATE_TRIPLE = new Block(FabricBlockSettings.of(Material.STONE).strength(3.0F, 3.0F));
+
+	public static final Block TUFF_SINGLE = new Block(FabricBlockSettings.of(Material.STONE).strength(3.0F, 3.0F));
+	public static final Block TUFF_DOUBLE = new Block(FabricBlockSettings.of(Material.STONE).strength(3.0F, 3.0F));
+	public static final Block TUFF_TRIPLE = new Block(FabricBlockSettings.of(Material.STONE).strength(3.0F, 3.0F));
+
 	public static final Block LAVASPRING = new Lavaspring(FabricBlockSettings.of(Material.METAL).strength(3.0F, 3.0F));
 	public static final Block WELLSPRING = new Wellspring(FabricBlockSettings.of(Material.METAL).strength(3.0F, 3.0F));
 
@@ -85,7 +93,15 @@ public class BlockInit
 		Registry.register(Registry.BLOCK, new Identifier(ResourcefulTools.MOD_ID, "netherrack_single"), NETHERRACK_SINGLE);
 		Registry.register(Registry.BLOCK, new Identifier(ResourcefulTools.MOD_ID, "netherrack_double"), NETHERRACK_DOUBLE);
 		Registry.register(Registry.BLOCK, new Identifier(ResourcefulTools.MOD_ID, "netherrack_triple"), NETHERRACK_TRIPLE);
-		
+
+		Registry.register(Registry.BLOCK, new Identifier(ResourcefulTools.MOD_ID, "cobbled_deepslate_single"), COBBLED_DEEPSLATE_SINGLE);
+		Registry.register(Registry.BLOCK, new Identifier(ResourcefulTools.MOD_ID, "cobbled_deepslate_double"), COBBLED_DEEPSLATE_DOUBLE);
+		Registry.register(Registry.BLOCK, new Identifier(ResourcefulTools.MOD_ID, "cobbled_deepslate_triple"), COBBLED_DEEPSLATE_TRIPLE);
+
+		Registry.register(Registry.BLOCK, new Identifier(ResourcefulTools.MOD_ID, "tuff_single"), TUFF_SINGLE);
+		Registry.register(Registry.BLOCK, new Identifier(ResourcefulTools.MOD_ID, "tuff_double"), TUFF_DOUBLE);
+		Registry.register(Registry.BLOCK, new Identifier(ResourcefulTools.MOD_ID, "tuff_triple"), TUFF_TRIPLE);
+
 		if(enableLavaSpring)
 		{
 			Registry.register(Registry.BLOCK, new Identifier(ResourcefulTools.MOD_ID, "lavaspring"), LAVASPRING);
@@ -130,7 +146,16 @@ public class BlockInit
 		Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "netherrack_single"), new BlockItem(NETHERRACK_SINGLE, new Item.Settings().group(ResourcefulTools.RESOURCEFUL_TOOLS_GROUP)));
 		Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "netherrack_double"), new BlockItem(NETHERRACK_DOUBLE, new Item.Settings().group(ResourcefulTools.RESOURCEFUL_TOOLS_GROUP)));
 		Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "netherrack_triple"), new BlockItem(NETHERRACK_TRIPLE, new Item.Settings().group(ResourcefulTools.RESOURCEFUL_TOOLS_GROUP)));
-		
+
+		Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "cobbled_deepslate_single"), new BlockItem(COBBLED_DEEPSLATE_SINGLE, new Item.Settings().group(ResourcefulTools.RESOURCEFUL_TOOLS_GROUP)));
+		Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "cobbled_deepslate_double"), new BlockItem(COBBLED_DEEPSLATE_DOUBLE, new Item.Settings().group(ResourcefulTools.RESOURCEFUL_TOOLS_GROUP)));
+		Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "cobbled_deepslate_triple"), new BlockItem(COBBLED_DEEPSLATE_TRIPLE , new Item.Settings().group(ResourcefulTools.RESOURCEFUL_TOOLS_GROUP)));
+
+		Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "tuff_single"), new BlockItem(TUFF_SINGLE, new Item.Settings().group(ResourcefulTools.RESOURCEFUL_TOOLS_GROUP)));
+		Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "tuff_double"), new BlockItem(TUFF_DOUBLE, new Item.Settings().group(ResourcefulTools.RESOURCEFUL_TOOLS_GROUP)));
+		Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "tuff_triple"), new BlockItem(TUFF_TRIPLE, new Item.Settings().group(ResourcefulTools.RESOURCEFUL_TOOLS_GROUP)));
+
+
 		if(enableLavaSpring)
 		{
 			Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "lavaspring"), new BlockItem(LAVASPRING, new Item.Settings().group(ResourcefulTools.RESOURCEFUL_TOOLS_GROUP)));

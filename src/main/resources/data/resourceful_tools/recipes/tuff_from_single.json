@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "resourceful_tools:tuff_single"
+        }
+    ],
+    "result": {
+        "item": "minecraft:tuff",
+        "count": 9
+    }
+}

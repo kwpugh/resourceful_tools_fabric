@@ -1,0 +1,24 @@
+{
+    "type": "minecraft:crafting_shaped",
+
+    "pattern":
+    [
+        "AAA",
+        "AAA",
+        "AAA"
+    ],
+
+    "key":
+    {
+        "A":
+        {
+            "item": "resourceful_tools:tuff_double"
+        }
+    },
+
+    "result":
+    {
+        "item": "resourceful_tools:tuff_triple",
+        "count": 1
+    }
+}
