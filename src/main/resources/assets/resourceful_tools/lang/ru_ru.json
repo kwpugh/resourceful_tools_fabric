@@ -1,0 +1,159 @@
+
+{
+	"block.resourceful_tools.dirt_single": "Сжатая земля",
+	"item.resourceful_tools.dirt_single": "Сжатая земля",
+
+	"block.resourceful_tools.dirt_double": "Дважды сжатая земля",
+	"item.resourceful_tools.dirt_double": "Дважды сжатая земля",
+
+	"block.resourceful_tools.dirt_triple": "Трижды сжатая земля",
+	"item.resourceful_tools.dirt_triple": "Трижды сжатая земля",
+
+	"block.resourceful_tools.gravel_single": "Сжатый гравий",
+	"item.resourceful_tools.gravel_single": "Сжатый гравий",
+
+	"block.resourceful_tools.gravel_double": "Дважды сжатый гравий",
+	"item.resourceful_tools.gravel_double": "Дважды сжатый гравий",
+
+	"block.resourceful_tools.gravel_triple": "Трижды сжатый гравий",
+	"item.resourceful_tools.gravel_triple": "Трижды сжатый гравий",
+
+	"block.resourceful_tools.sand_single": "Сжатый песок",
+	"item.resourceful_tools.sand_single": "Сжатый песок",
+
+	"block.resourceful_tools.sand_double": "Дважды сжатый песок",
+	"item.resourceful_tools.sand_double": "Дважды сжатый песок",
+
+	"block.resourceful_tools.sand_triple": "Трижды сжатый песок",
+	"item.resourceful_tools.sand_triple": "Трижды сжатый песок",
+			
+	"block.resourceful_tools.cobblestone_single": "Сжатый булыжник",
+	"item.resourceful_tools.cobblestone_single": "Сжатый булыжник",
+
+	"block.resourceful_tools.cobblestone_double": "Дважды сжатый булыжник",
+	"item.resourceful_tools.cobblestone_double": "Дважды сжатый булыжник",
+
+	"block.resourceful_tools.cobblestone_triple": "Трижды сжатый булыжник",
+	"item.resourceful_tools.cobblestone_triple": "Трижды сжатый булыжник",
+
+	"block.resourceful_tools.andesite_single": "Сжатый андезит",
+	"item.resourceful_tools.andesite_single": "Сжатый андезит",
+
+	"block.resourceful_tools.andesite_double": "Дважды сжатый андезит",
+	"item.resourceful_tools.andesite_double": "Дважды сжатый андезит",
+
+	"block.resourceful_tools.andesite_triple": "Трижды сжатый андезит",
+	"item.resourceful_tools.andesite_triple": "Трижды сжатый андезит",
+
+	"block.resourceful_tools.diorite_single": "Сжатый диорит",
+	"item.resourceful_tools.diorite_single": "Сжатый диорит",
+
+	"block.resourceful_tools.diorite_double": "Дважды сжатый диорит",
+	"item.resourceful_tools.diorite_double": "Дважды сжатый диорит",
+
+	"block.resourceful_tools.diorite_triple": "Трижды сжатый диорит",
+	"item.resourceful_tools.diorite_triple": "Трижды сжатый диорит",
+
+	"block.resourceful_tools.granite_single": "Сжатый гранит",
+	"item.resourceful_tools.granite_single": "Сжатый гранит",
+
+	"block.resourceful_tools.granite_double": "Дважды сжатый гранит",
+	"item.resourceful_tools.granite_double": "Дважды сжатый гранит",
+
+	"block.resourceful_tools.granite_triple": "Трижды сжатый гранит",
+	"item.resourceful_tools.granite_triple": "Трижды сжатый гранит",
+
+	"block.resourceful_tools.netherrack_single": "Сжатый незерак",
+	"item.resourceful_tools.netherrack_single": "Сжатый незерак",
+
+	"block.resourceful_tools.netherrack_double": "Дважды сжатый незерак",
+	"item.resourceful_tools.netherrack_double": "Дважды сжатый незерак",
+
+	"block.resourceful_tools.netherrack_triple": "Трижды сжатый незерак",
+	"item.resourceful_tools.netherrack_triple": "Трижды сжатый незерак",
+
+	"block.resourceful_tools.cobbled_deepslate_single": "Сжатый колотый грубинный сланец",
+	"item.resourceful_tools.cobbled_deepslate_single": "Сжатый колотый грубинный сланец",
+
+	"block.resourceful_tools.cobbled_deepslate_double": "Дважды сжатый колотый грубинный сланец",
+	"item.resourceful_tools.cobbled_deepslate_double": "Дважды сжатый колотый грубинный сланец",
+
+	"block.resourceful_tools.cobbled_deepslate_triple": "Трижды сжатый колотый грубинный сланец",
+	"item.resourceful_tools.cobbled_deepslate_triple": "Трижды сжатый колотый грубинный сланец",
+
+	"block.resourceful_tools.tuff_single": "Сжатый туф",
+	"item.resourceful_tools.tuff_single": "Сжатый туф",
+
+	"block.resourceful_tools.tuff_double": "Дважды сжатый туф",
+	"item.resourceful_tools.tuff_double": "Дважды сжатый туф",
+
+	"block.resourceful_tools.tuff_triple": "Трижды сжатый туф",
+	"item.resourceful_tools.tuff_triple": "Трижды сжатый туф",
+
+	"item.resourceful_tools.glass_placer": "Размещатель стекла",
+	"item.resourceful_tools.glass_placer.line1": "Поместите блок стекла в воздухе, куда смотрит игрок",
+	"item.resourceful_tools.glass_placer.line2": "Для использования нажмите правую кнопку мыши",
+
+	"item.resourceful_tools.hand_tiller": "Ручной культиватор",
+	"item.resourceful_tools.hand_tiller.line1":"Используется для получения ресурсов из глины и гравия",
+
+	"item.resourceful_tools.clam_digger": "Копалка моллюсков",
+	"item.resourceful_tools.clam_digger.line1":"Используется для выкапывания моллюсков из песка",
+	"item.resourceful_tools.clam_digger.line2":"Необходимо использовать на пляже рядом с биомом океана",
+
+	"item.resourceful_tools.hook_knife_copper": "Медный крюк-нож",
+	"item.resourceful_tools.hook_knife": "Крюк-нож",
+	"item.resourceful_tools.hook_knife.line1": "Используется для получения нитей из овец без вреда им",
+	"item.resourceful_tools.hook_knife.line2": "Используйте на шерстяных блоках, чтобы добыть нить",
+
+	"item.resourceful_tools.hand_pick": "Ручной подбор",
+	"item.resourceful_tools.hand_pick.line1":"Используется для получения ресурсов из нескольких типов камней",
+
+	"item.resourceful_tools.tree_trimmer": "Ручной триммер ",
+	"item.resourceful_tools.tree_trimmer_copper": "Медный ручной триммер",
+	"item.resourceful_tools.tree_trimmer.line1": "Используется для получения ресурсов из листьев деревьев и морских растений",
+
+	"item.resourceful_tools.trash_can": "Мусорка",
+	"item.resourceful_tools.trash_can.line1": "Предупреждение! Вещи исчезнут после закрытия окна!",
+
+	"item.resourceful_tools.crack_hammer": "Измельчающий молоток",
+	"item.resourceful_tools.diamond_crack_hammer": "Алмазный измельчающий молоток",
+	"item.resourceful_tools.crack_hammer.line1": "Используется на верстаке для изготовления рудных порошков",
+
+	"item.resourceful_tools.copper_nugget": "Медный самородок",
+	"item.resourceful_tools.powder_carbon": "Карбоновый порошок",
+	"item.resourceful_tools.powder_iron": "Железный порошок",
+	"item.resourceful_tools.powder_gold": "Золотой порошок",
+	"item.resourceful_tools.powder_emerald": "Изумрудный порошок",
+	"item.resourceful_tools.powder_diamond": "Алмазный порошок",
+	"item.resourceful_tools.powder_netherite": "Незеритовый порошок",
+	"item.resourceful_tools.powder_copper": "Медный порошок",
+	"item.resourceful_tools.powder_tin": "Оловянный порошок",
+	"item.resourceful_tools.powder_steel": "Стальной порошок",
+
+	"item.resourceful_tools.powder_sulfur": "Сера",
+	"item.resourceful_tools.powder_saltpeter": "Селитра",
+	"item.resourceful_tools.bone_fragment": "Фрагмент кости",
+	"item.resourceful_tools.pearl_fragment": "Фрагмент жемчуга",
+	"item.resourceful_tools.small_blaze_powder": "Маленькая пачка огненного порошка",
+	"item.resourceful_tools.nether_star_fragment": "Фрагмент звезды Незера",
+	"item.resourceful_tools.ghast_tear_fragment": "Фрагмент слезы Гаста",
+	"item.resourceful_tools.netherite_fragment": "Фрагмент незерита",
+
+	"item.resourceful_tools.bamboo_sheet": "Бамбуковый лист",
+	"item.resourceful_tools.large_bamboo_sheet": "Большой бамбуковый лист",
+
+	"item.resourceful_tools.jerky": "Копченое вяленое мясо",
+	"item.resourceful_tools.ream_of_paper": "Пачка бумаги",
+	"item.resourceful_tools.clam": "Моллюск",
+	"item.resourceful_tools.raw_clam": "Сырой моллюск",
+	"item.resourceful_tools.cooked_clam": "Копченый моллюск",
+
+	"block.resourceful_tools.wellspring": "Источник",
+	"item.resourceful_tools.wellspring": "Источник",
+
+	"block.resourceful_tools.lavaspring": "Источник лавы",
+	"item.resourceful_tools.lavaspring": "Источник лавы",
+
+	"itemGroup.resourceful_tools.resourceful_tools_group": "Resourceful Tools"
+}
