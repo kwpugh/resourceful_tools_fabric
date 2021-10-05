@@ -7,6 +7,7 @@ import com.kwpugh.resourceful_tools.items.*;
 import com.kwpugh.resourceful_tools.materials.CopperToolMaterial;
 import com.kwpugh.resourceful_tools.materials.IronToolMaterial;
 import net.minecraft.item.Item;
+import net.minecraft.item.Items;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
@@ -36,7 +37,7 @@ public class ItemInit
 	public static final Item HAND_PICK = new HandPick(IRON_TOOL_MATERIAL, 0, -2.8F, new Item.Settings().group(ResourcefulTools.RESOURCEFUL_TOOLS_GROUP));
 	public static final Item GLASS_PLACER = new GlassPlacer(new Item.Settings().maxCount(1).maxDamage(64).group(ResourcefulTools.RESOURCEFUL_TOOLS_GROUP));
 	public static final Item TRASH_CAN = new TrashCan(new Item.Settings().group(ResourcefulTools.RESOURCEFUL_TOOLS_GROUP));
- 
+
 	public static final Item CRACK_HAMMER = new CrackHammer(new Item.Settings().maxDamage(ironHammerDurability).group(ResourcefulTools.RESOURCEFUL_TOOLS_GROUP));
 	public static final Item DIAMOND_CRACK_HAMMER = new CrackHammer(new Item.Settings().maxDamage(diamondHammerDurability).group(ResourcefulTools.RESOURCEFUL_TOOLS_GROUP));
 	public static final Item COPPER_NUGGET = new Item(new Item.Settings().group(ResourcefulTools.RESOURCEFUL_TOOLS_GROUP));
