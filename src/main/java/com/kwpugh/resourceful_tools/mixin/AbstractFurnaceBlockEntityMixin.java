@@ -52,7 +52,5 @@ abstract class AbstractFurnaceBlockEntityMixin extends BlockEntity
     			}
     		}
     	}
-
-
     }
 }

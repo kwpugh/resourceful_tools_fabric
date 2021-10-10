@@ -1,6 +1,7 @@
 package com.kwpugh.resourceful_tools;
 
 import com.kwpugh.resourceful_tools.config.ResourcefulToolsConfig;
+import com.kwpugh.resourceful_tools.handlers.EventHandler;
 import com.kwpugh.resourceful_tools.init.BlockInit;
 import com.kwpugh.resourceful_tools.init.ItemInit;
 
@@ -10,6 +11,7 @@ import me.shedaniel.autoconfig.serializer.PartitioningSerializer;
 
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
+import net.fabricmc.fabric.api.event.player.PlayerBlockBreakEvents;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.Identifier;
@@ -26,5 +28,7 @@ public class ResourcefulTools implements ModInitializer
     	BlockInit.registerBlocks();
     	BlockInit.registerBlockItems();    	
     	ItemInit.registerItems();
+
+		PlayerBlockBreakEvents.AFTER.register(EventHandler::onBlockBreak);
     }	
 }

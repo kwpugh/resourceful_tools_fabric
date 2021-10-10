@@ -75,7 +75,7 @@ public class ResourcefulToolsConfig extends PartitioningSerializer.GlobalData
 				+"\n"
 				+"\n"
 				+"******************************"
-				+"\nClam Digger"
+				+"\nCLAM DIGGER"
 				+"\n- drop chance value between 0.0-1.0"
 				+"\n******************************")
 		public double clamDropChance = .80D;
@@ -99,7 +99,6 @@ public class ResourcefulToolsConfig extends PartitioningSerializer.GlobalData
 
 		@Comment("\n"
 				+"\n"
-				+"\n"
 				+"******************************"
 				+"\nIRON TOOL MATERIAL"
 				+"\n- Handpick, Hand Tiller, & Hand Trimmer"
@@ -111,7 +110,6 @@ public class ResourcefulToolsConfig extends PartitioningSerializer.GlobalData
 		public int ironEnchantability = 8;
 
 		@Comment("\n"
-				+"\n"
 				+"\n"
 				+"******************************"
 				+"\nCOPPER TOOL MATERIAL"
