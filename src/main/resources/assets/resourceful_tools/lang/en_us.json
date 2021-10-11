@@ -89,6 +89,15 @@
 	"block.resourceful_tools.tuff_triple": "Triple Compressed Tuff",
 	"item.resourceful_tools.tuff_triple": "Triple Compressed Tuff",
 
+	"block.resourceful_tools.basalt_single": "Compressed Basalt",
+	"item.resourceful_tools.basalt_single": "Compressed Basalt",
+
+	"block.resourceful_tools.basalt_double": "Double Compressed Basalt",
+	"item.resourceful_tools.basalt_double": "Double Compressed Basalt",
+
+	"block.resourceful_tools.basalt_triple": "Triple Compressed Basalt",
+	"item.resourceful_tools.basalt_triple": "Triple Compressed Basalt",
+
 	"item.resourceful_tools.glass_placer": "Glass Placer",
 	"item.resourceful_tools.glass_placer.line1": "Place a glass block in the air, where the player is looking",
 	"item.resourceful_tools.glass_placer.line2": "Right-click to use.",

@@ -1,0 +1,137 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "resourceful_tools:dirt_single",
+      "required": false
+    },
+    {
+      "id": "resourceful_tools:dirt_double",
+      "required": false
+    },
+    {
+      "id": "resourceful_tools:dirt_triple",
+      "required": false
+    },
+    {
+      "id": "resourceful_tools:gravel_single",
+      "required": false
+    },
+    {
+      "id": "resourceful_tools:gravel_double",
+      "required": false
+    },
+    {
+      "id": "resourceful_tools:gravel_triple",
+      "required": false
+    },
+    {
+      "id": "resourceful_tools:sand_single",
+      "required": false
+    },
+    {
+      "id": "resourceful_tools:sand_double",
+      "required": false
+    },
+    {
+      "id": "resourceful_tools:sand_triple",
+      "required": false
+    },
+    {
+      "id": "resourceful_tools:cobblestone_single",
+      "required": false
+    },
+    {
+      "id": "resourceful_tools:cobblestone_double",
+      "required": false
+    },
+    {
+      "id": "resourceful_tools:cobblestone_triple",
+      "required": false
+    },
+    {
+      "id": "resourceful_tools:andesite_single",
+      "required": false
+    },
+    {
+      "id": "resourceful_tools:andesite_double",
+      "required": false
+    },
+    {
+      "id": "resourceful_tools:andesite_triple",
+      "required": false
+    },
+    {
+      "id": "resourceful_tools:diorite_single",
+      "required": false
+    },
+    {
+      "id": "resourceful_tools:diorite_double",
+      "required": false
+    },
+    {
+      "id": "resourceful_tools:diorite_triple",
+      "required": false
+    },
+    {
+      "id": "resourceful_tools:granite_single",
+      "required": false
+    },
+    {
+      "id": "resourceful_tools:granite_double",
+      "required": false
+    },
+    {
+      "id": "resourceful_tools:granite_triple",
+      "required": false
+    },
+    {
+      "id": "resourceful_tools:netherrack_single",
+      "required": false
+    },
+    {
+      "id": "resourceful_tools:netherrack_double",
+      "required": false
+    },
+    {
+      "id": "resourceful_tools:netherrack_triple",
+      "required": false
+    },
+    {
+      "id": "resourceful_tools:cobbled_deepslate_single",
+      "required": false
+    },
+    {
+      "id": "resourceful_tools:cobbled_deepslate_double",
+      "required": false
+    },
+    {
+      "id": "resourceful_tools:cobbled_deepslate_triple",
+      "required": false
+    },
+    {
+      "id": "resourceful_tools:tuff_single",
+      "required": false
+    },
+    {
+      "id": "resourceful_tools:tuff_double",
+      "required": false
+    },
+    {
+      "id": "resourceful_tools:tuff_triple",
+      "required": false
+    },
+    {
+      "id": "resourceful_tools:basalt_single",
+      "required": false
+    },
+    {
+      "id": "resourceful_tools:basalt_double",
+      "required": false
+    },
+    {
+      "id": "resourceful_tools:basalt_triple",
+      "required": false
+    }
+  ]
+}

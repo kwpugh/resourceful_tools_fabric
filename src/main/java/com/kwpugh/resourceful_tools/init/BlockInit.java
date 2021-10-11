@@ -57,6 +57,10 @@ public class BlockInit
 	public static final Block TUFF_DOUBLE = new Block(FabricBlockSettings.of(Material.STONE).strength(3.0F, 3.0F));
 	public static final Block TUFF_TRIPLE = new Block(FabricBlockSettings.of(Material.STONE).strength(3.0F, 3.0F));
 
+	public static final Block BASALT_SINGLE = new Block(FabricBlockSettings.of(Material.STONE).strength(3.0F, 3.0F));
+	public static final Block BASALT_DOUBLE = new Block(FabricBlockSettings.of(Material.STONE).strength(3.0F, 3.0F));
+	public static final Block BASALT_TRIPLE = new Block(FabricBlockSettings.of(Material.STONE).strength(3.0F, 3.0F));
+
 	public static final Block LAVASPRING = new Lavaspring(FabricBlockSettings.of(Material.METAL).strength(3.0F, 3.0F));
 	public static final Block WELLSPRING = new Wellspring(FabricBlockSettings.of(Material.METAL).strength(3.0F, 3.0F));
 
@@ -101,6 +105,10 @@ public class BlockInit
 		Registry.register(Registry.BLOCK, new Identifier(ResourcefulTools.MOD_ID, "tuff_single"), TUFF_SINGLE);
 		Registry.register(Registry.BLOCK, new Identifier(ResourcefulTools.MOD_ID, "tuff_double"), TUFF_DOUBLE);
 		Registry.register(Registry.BLOCK, new Identifier(ResourcefulTools.MOD_ID, "tuff_triple"), TUFF_TRIPLE);
+
+		Registry.register(Registry.BLOCK, new Identifier(ResourcefulTools.MOD_ID, "basalt_single"), BASALT_SINGLE);
+		Registry.register(Registry.BLOCK, new Identifier(ResourcefulTools.MOD_ID, "basalt_double"), BASALT_DOUBLE);
+		Registry.register(Registry.BLOCK, new Identifier(ResourcefulTools.MOD_ID, "basalt_triple"), BASALT_TRIPLE);
 
 		if(enableLavaSpring)
 		{
@@ -155,6 +163,9 @@ public class BlockInit
 		Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "tuff_double"), new BlockItem(TUFF_DOUBLE, new Item.Settings().group(ResourcefulTools.RESOURCEFUL_TOOLS_GROUP)));
 		Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "tuff_triple"), new BlockItem(TUFF_TRIPLE, new Item.Settings().group(ResourcefulTools.RESOURCEFUL_TOOLS_GROUP)));
 
+		Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "basalt_single"), new BlockItem(BASALT_SINGLE, new Item.Settings().group(ResourcefulTools.RESOURCEFUL_TOOLS_GROUP)));
+		Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "basalt_double"), new BlockItem(BASALT_DOUBLE, new Item.Settings().group(ResourcefulTools.RESOURCEFUL_TOOLS_GROUP)));
+		Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "basalt_triple"), new BlockItem(BASALT_TRIPLE, new Item.Settings().group(ResourcefulTools.RESOURCEFUL_TOOLS_GROUP)));
 
 		if(enableLavaSpring)
 		{

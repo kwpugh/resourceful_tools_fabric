@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "resourceful_tools:basalt_single"
+        }
+    ],
+    "result": {
+        "item": "minecraft:basalt",
+        "count": 9
+    }
+}
