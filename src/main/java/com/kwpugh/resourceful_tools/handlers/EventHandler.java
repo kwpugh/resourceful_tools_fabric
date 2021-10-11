@@ -19,11 +19,13 @@ public class EventHandler
         {
             ItemStack tool = player.getMainHandStack();
 
-            if(tool.getItem() == ItemInit.HAND_PICK)
+            if(tool.getItem() == ItemInit.HAND_PICK ||
+                    tool.getItem() == ItemInit.HAND_PICK_COPPER)
             {
                 HandPickDrops.testForDrops(world, player, pos, state, entity, tool);
             }
-            else if(tool.getItem() == ItemInit.HAND_TILLER)
+            else if(tool.getItem() == ItemInit.HAND_TILLER ||
+                    tool.getItem() == ItemInit.HAND_TILLER_COPPER)
             {
                 HandTillerDrops.testForDrops(world, player, pos, state, entity, tool);
             }
@@ -32,7 +34,8 @@ public class EventHandler
             {
                 TreeTrimmerDrops.testForDrops(world, player, pos, state, entity, tool);
             }
-            else if(tool.getItem() == ItemInit.CLAIM_DIGGER)
+            else if(tool.getItem() == ItemInit.CLAM_DIGGER ||
+                    tool.getItem() == ItemInit.CLAM_DIGGER_COPPER)
             {
                 ClamDiggerDrops.testForDrops(world, player, pos, state, entity, tool);
             }

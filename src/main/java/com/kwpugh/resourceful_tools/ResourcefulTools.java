@@ -28,7 +28,6 @@ public class ResourcefulTools implements ModInitializer
     	BlockInit.registerBlocks();
     	BlockInit.registerBlockItems();    	
     	ItemInit.registerItems();
-
 		PlayerBlockBreakEvents.AFTER.register(EventHandler::onBlockBreak);
     }	
 }

@@ -1,0 +1,32 @@
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+        "C  ",
+        " B ",
+        "A C"
+    ],
+    
+    "key":
+    {
+        "A":
+        {
+            "item": "minecraft:stick"
+        },
+        "B":
+        {
+            "item": "minecraft:copper_ingot"
+        },
+        "C":
+        {
+            "tag": "c:copper_nuggets"
+        }
+    },
+    
+    "result":
+    {
+        "item": "resourceful_tools:hand_pick_copper",
+        "count": 1
+    }
+}

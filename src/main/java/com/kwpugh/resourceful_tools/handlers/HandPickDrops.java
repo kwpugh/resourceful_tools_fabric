@@ -9,6 +9,7 @@ import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.entity.ItemEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
+import net.minecraft.item.Items;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 
@@ -22,6 +23,7 @@ public class HandPickDrops
     static double quartz = ResourcefulTools.CONFIG.GENERAL.quartzDropChance;
     static double blackstone = ResourcefulTools.CONFIG.GENERAL.blackstoneDropChance;
     static double endstone = ResourcefulTools.CONFIG.GENERAL.endstoneDropChance;
+    static double deepslate = ResourcefulTools.CONFIG.GENERAL.deepslateDropChance;
 
     public static void testForDrops(World world, PlayerEntity player, BlockPos pos, BlockState state, BlockEntity entity, ItemStack stack)
     {
@@ -31,7 +33,14 @@ public class HandPickDrops
 
         if (!world.isClient)
         {
-            if (block == Blocks.SANDSTONE)
+            if (block == Blocks.DEEPSLATE)
+            {
+                double r = random.nextDouble();
+                if (r <= deepslate)
+                {
+                    world.spawnEntity(new ItemEntity(world, pos.getX(), pos.getY(), pos.getZ(), new ItemStack(Items.ROTTEN_FLESH, 1)));
+                }
+            } else if (block == Blocks.SANDSTONE)
             {
                 double r = random.nextDouble();
                 if (r <= sandstone)

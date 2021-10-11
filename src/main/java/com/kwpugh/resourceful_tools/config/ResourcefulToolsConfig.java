@@ -15,7 +15,6 @@ public class ResourcefulToolsConfig extends PartitioningSerializer.GlobalData
 	{
 		@Comment("\n"
 				+"\n"
-				+"\n"
 				+"******************************"
 				+"\nENABLE/DISABLE TOOLS"
 				+"\n******************************")
@@ -30,7 +29,6 @@ public class ResourcefulToolsConfig extends PartitioningSerializer.GlobalData
 
     	@Comment("\n"
     			+"\n"
-    			+"\n"
     			+"******************************"
     			+"\nSPRING BLOCKS"
     			+"\n******************************")
@@ -40,15 +38,14 @@ public class ResourcefulToolsConfig extends PartitioningSerializer.GlobalData
 		
     	@Comment("\n"
     			+"\n"
-    			+"\n"
     			+"******************************"
     			+"\nCRACK HAMMERS"
     			+"\n******************************")
-		public int ironHammerDurability = 129;
+		public int copperHammerDurability = 125;
+		public int ironHammerDurability = 250;
     	public int diamondHammerDurability = 516;
 
 		@Comment("\n"
-				+"\n"
 				+"\n"
 				+"******************************"
 				+"\nHAND PICK"
@@ -60,9 +57,9 @@ public class ResourcefulToolsConfig extends PartitioningSerializer.GlobalData
 		public double quartzDropChance = .10D;
 		public double blackstoneDropChance = .10D;
 		public double endstoneDropChance = .10D;
+		public double deepslateDropChance = .15D;
 
 		@Comment("\n"
-				+"\n"
 				+"\n"
 				+"******************************"
 				+"\nHAND TILLER"
@@ -73,7 +70,6 @@ public class ResourcefulToolsConfig extends PartitioningSerializer.GlobalData
 
 		@Comment("\n"
 				+"\n"
-				+"\n"
 				+"******************************"
 				+"\nCLAM DIGGER"
 				+"\n- drop chance value between 0.0-1.0"
@@ -82,9 +78,8 @@ public class ResourcefulToolsConfig extends PartitioningSerializer.GlobalData
 
 		@Comment("\n"
 				+"\n"
-				+"\n"
 				+"******************************"
-				+"\nHAND TRIMMER"
+				+"\nTREE TRIMMER"
 				+"\n- drop chance value between 0.0-1.0"
 				+"\n******************************")
 		public double spruceDropChance = .20D;
@@ -96,6 +91,7 @@ public class ResourcefulToolsConfig extends PartitioningSerializer.GlobalData
 		public double seagrassDropChance = .05D;
 		public double kelpDropChance = .05D;
 		public double eggDropChance = .35D;
+		public double phantomMembraneDropChance = .15D;
 
 		@Comment("\n"
 				+"\n"

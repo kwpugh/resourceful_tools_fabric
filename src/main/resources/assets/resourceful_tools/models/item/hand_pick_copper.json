@@ -1,0 +1,6 @@
+{
+   "parent": "item/handheld",
+   "textures": {
+       "layer0": "resourceful_tools:item/hand_pick_copper"
+   }
+}

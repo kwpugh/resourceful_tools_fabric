@@ -11,9 +11,9 @@
 	"key":
 	{
 		"A": { "item": "minecraft:string" },
-		"B": { "item": "minecraft:diamond" },
+		"B": { "item": "minecraft:copper_ingot" },
 		"S": { "item": "minecraft:stick" }	
 	},
 	
-	"result": { "item": "resourceful_tools:diamond_crack_hammer" }
+	"result": { "item": "resourceful_tools:crack_hammer_copper" }
 }

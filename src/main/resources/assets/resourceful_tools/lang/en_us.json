@@ -1,4 +1,3 @@
-
 {
 	"block.resourceful_tools.dirt_single": "Compressed Dirt",
 	"item.resourceful_tools.dirt_single": "Compressed Dirt",
@@ -94,30 +93,34 @@
 	"item.resourceful_tools.glass_placer.line1": "Place a glass block in the air, where the player is looking",
 	"item.resourceful_tools.glass_placer.line2": "Right-click to use.",
 
-	"item.resourceful_tools.hand_tiller": "Hand Tiller",
+	"item.resourceful_tools.hand_tiller": "Iron Hand Tiller",
+	"item.resourceful_tools.hand_tiller_copper": "Copper Hand Tiller",
 	"item.resourceful_tools.hand_tiller.line1":"Used to obtain resources from Clay and Gravel",
 
-	"item.resourceful_tools.clam_digger": "Clam Digger",
+	"item.resourceful_tools.clam_digger": "Iron Clam Digger",
+	"item.resourceful_tools.clam_digger_copper": "Copper Clam Digger",
 	"item.resourceful_tools.clam_digger.line1":"Used to dig clams from Sand",
 	"item.resourceful_tools.clam_digger.line2":"Must be used on a beach near an Ocean biome",
 
 	"item.resourceful_tools.hook_knife_copper": "Copper Hook Knife",
-	"item.resourceful_tools.hook_knife": "Hook Knife",
+	"item.resourceful_tools.hook_knife": "Iron Hook Knife",
 	"item.resourceful_tools.hook_knife.line1": "Used to get string from Sheep without harming",
 	"item.resourceful_tools.hook_knife.line2": "Use on wool blocks to drop string",
 
-	"item.resourceful_tools.hand_pick": "Hand Pick",
+	"item.resourceful_tools.hand_pick": "Iron Hand Pick",
+	"item.resourceful_tools.hand_pick_copper": "Copper Hand Pick",
 	"item.resourceful_tools.hand_pick.line1":"Used to obtain resources from several types of stones",
 
-	"item.resourceful_tools.tree_trimmer": "Hand Trimmer",
+	"item.resourceful_tools.tree_trimmer": "Iron Hand Trimmer",
 	"item.resourceful_tools.tree_trimmer_copper": "Copper Hand Trimmer",
 	"item.resourceful_tools.tree_trimmer.line1": "Used to obtain resources from tree leaves and sea plants",
 
 	"item.resourceful_tools.trash_can": "Trash Can",
 	"item.resourceful_tools.trash_can.line1": "Warning, items will be lost when GUI closed",
 
-	"item.resourceful_tools.crack_hammer": "Crack Hammer",
-	"item.resourceful_tools.diamond_crack_hammer": "Diamond Crack Hammer",
+	"item.resourceful_tools.crack_hammer": "Iron Crack Hammer",
+	"item.resourceful_tools.crack_hammer_copper": "Copper Crack Hammer",
+	"item.resourceful_tools.crack_hammer_diamond": "Diamond Crack Hammer",
 	"item.resourceful_tools.crack_hammer.line1": "Used in a crafting table to make ore powders",
 
 	"item.resourceful_tools.copper_nugget": "Copper Nugget",

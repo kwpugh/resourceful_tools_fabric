@@ -1,6 +1,0 @@
-{
-   "parent": "item/handheld",
-   "textures": {
-       "layer0": "resourceful_tools:item/diamond_crack_hammer"
-   }
-}

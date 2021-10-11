@@ -26,6 +26,7 @@ public class TreeTrimmerDrops
     static double seagrass = ResourcefulTools.CONFIG.GENERAL.seagrassDropChance;
     static double kelp = ResourcefulTools.CONFIG.GENERAL.kelpDropChance;
     static double egg = ResourcefulTools.CONFIG.GENERAL.eggDropChance;
+    static double membrane = ResourcefulTools.CONFIG.GENERAL.phantomMembraneDropChance;
 
     public static void testForDrops(World world, PlayerEntity player, BlockPos pos, BlockState state, BlockEntity entity, ItemStack stack)
     {
@@ -97,6 +98,15 @@ public class TreeTrimmerDrops
                 if (r <= kelp)
                 {
                     world.spawnEntity(new ItemEntity(world, pos.getX(), pos.getY(), pos.getZ(), new ItemStack(Items.PRISMARINE_SHARD, 1)));
+                }
+            }
+            else if(block == Blocks.AZALEA_LEAVES ||
+                    block == Blocks.FLOWERING_AZALEA_LEAVES)
+            {
+                double r = random.nextDouble();
+                if (r <= membrane)
+                {
+                    world.spawnEntity(new ItemEntity(world, pos.getX(), pos.getY(), pos.getZ(), new ItemStack(Items.PHANTOM_MEMBRANE, 1)));
                 }
             }
             else if(block == Blocks.HAY_BLOCK)
