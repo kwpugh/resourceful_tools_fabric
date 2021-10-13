@@ -47,8 +47,8 @@ public class Wellspring extends Block
 	       else if (!player.getInventory().insertStack(itemstack1))
 	       {
 	           player.dropItem(itemstack1, false);
-	            
-	           return ActionResult.SUCCESS;
+			   stack.decrement(1);
+			   return ActionResult.SUCCESS;
 	       }
  		   
  		   stack.decrement(1);		  
@@ -69,8 +69,8 @@ public class Wellspring extends Block
 	       else if (!player.getInventory().insertStack(itemstack2))
 	       {
 	           player.dropItem(itemstack2, false);
-	            
-	           return ActionResult.SUCCESS;
+			   stack.decrement(1);
+			   return ActionResult.SUCCESS;
 	       }
 		   
 		   stack.decrement(1);		  

@@ -32,27 +32,28 @@ public class Lavaspring extends Block implements LavaSource
     public ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, Hand hand, BlockHitResult hit)
     {    
     	ItemStack stack = player.getStackInHand(hand);
- 	   
- 	   if (stack.getItem() == Items.BUCKET && !player.isCreative())
- 	   {
- 		   ItemStack itemstack1;
- 		   itemstack1 = new ItemStack(Items.LAVA_BUCKET);
 
- 		   if (stack.isEmpty())
-	       {
-	           player.setStackInHand(hand, itemstack1);
-	           
-	           return ActionResult.SUCCESS;
-	       }
-	       else if (!player.getInventory().insertStack(itemstack1))
-	       {
-	           player.dropItem(itemstack1, false);
-	            
-	           return ActionResult.SUCCESS;
-	       }
- 		   
- 		   stack.decrement(1);		  
- 	   }
+
+        if (stack.getItem() == Items.BUCKET && !player.isCreative())
+        {
+            ItemStack itemstack1;
+            itemstack1 = new ItemStack(Items.LAVA_BUCKET);
+
+            if (stack.isEmpty())
+            {
+                player.setStackInHand(hand, itemstack1);
+
+                return ActionResult.SUCCESS;
+            }
+            else if (!player.getInventory().insertStack(itemstack1))
+            {
+                player.dropItem(itemstack1, false);
+                stack.decrement(1);
+                return ActionResult.SUCCESS;
+            }
+
+            stack.decrement(1);
+        }
         
        return ActionResult.SUCCESS;
     }
