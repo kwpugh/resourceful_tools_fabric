@@ -2,6 +2,7 @@
   "replace": false,
   "values": [
    	"minecraft:totem_of_undying",
-  	"minecraft:elytra"
+  	"minecraft:elytra",
+    "resourceful_tools:crack_hammer_diamond"
   ]
 }
