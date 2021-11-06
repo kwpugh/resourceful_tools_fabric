@@ -1,10 +1,7 @@
 package com.kwpugh.resourceful_tools.items;
 
-import java.util.List;
-
 import com.kwpugh.pugh_lib.api.CustomRecipeRemainder;
 import com.kwpugh.resourceful_tools.init.ItemInit;
-
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
@@ -18,14 +15,18 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemUsageContext;
 import net.minecraft.item.Items;
+import net.minecraft.sound.SoundCategory;
+import net.minecraft.sound.SoundEvents;
 import net.minecraft.text.Text;
 import net.minecraft.text.TranslatableText;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.Formatting;
 import net.minecraft.util.Hand;
 import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.math.Vec3d;
 import net.minecraft.world.World;
+import net.minecraft.world.event.GameEvent;
+
+import java.util.List;
 
 public class HookKnife extends Item implements CustomRecipeRemainder
 {
@@ -58,6 +59,9 @@ public class HookKnife extends Item implements CustomRecipeRemainder
 	public ActionResult useOnBlock(ItemUsageContext context)
 	{
 		World world = context.getWorld();
+
+		if(world.isClient) return ActionResult.SUCCESS;
+
 		PlayerEntity player = context.getPlayer();
 		BlockPos pos = context.getBlockPos();
 		BlockState state = world.getBlockState(pos);
@@ -96,14 +100,34 @@ public class HookKnife extends Item implements CustomRecipeRemainder
 	public ActionResult useOnEntity(ItemStack stack, PlayerEntity user, LivingEntity entity, Hand hand) 
 	{
 		World world = user.world;
-		Vec3d pos = entity.getPos();
-	
+
+		if(world.isClient) return ActionResult.SUCCESS;
+
 		if(entity instanceof SheepEntity)
-		{			
-			world.spawnEntity(new ItemEntity(world, pos.getX(), pos.getY(), pos.getZ(), new ItemStack(Items.STRING, 1))); 
-			stack.damage(1, user, (callback) -> {
-				callback.sendEquipmentBreakStatus(EquipmentSlot.MAINHAND);
-				});	
+		{
+			SheepEntity sheep = (SheepEntity) entity;
+			if (stack.isOf(ItemInit.HOOK_KNIFE) ||
+					stack.isOf(ItemInit.HOOK_KNIFE_COPPER))
+			{
+				if (sheep.isShearable())
+				{
+					sheep.world.playSoundFromEntity(user, sheep, SoundEvents.ENTITY_SHEEP_SHEAR, SoundCategory.PLAYERS, 1.0F, 1.0F);
+					sheep.setSheared(true);
+
+					ItemEntity itemEntity = sheep.dropItem(Items.STRING);
+					if (itemEntity != null)
+					{
+						world.spawnEntity(new ItemEntity(world, sheep.getX(), sheep.getY(), sheep.getZ(), new ItemStack(Items.STRING, 3)));
+					}
+
+					sheep.emitGameEvent(GameEvent.SHEAR, user);
+					stack.damage(1, user, (callback) -> {
+						callback.sendEquipmentBreakStatus(EquipmentSlot.MAINHAND);
+					});
+
+					return ActionResult.SUCCESS;
+				}
+			}
 		}
 	
 		return ActionResult.PASS;

@@ -17,6 +17,10 @@ public class ItemInit
 	static int ironHammerDurability = ResourcefulTools.CONFIG.GENERAL.ironHammerDurability;
 	static int diamondHammerDurability = ResourcefulTools.CONFIG.GENERAL.diamondHammerDurability;
 	static int copperHammerDurability = ResourcefulTools.CONFIG.GENERAL.copperHammerDurability;
+
+	static int ironDurability = ResourcefulTools.CONFIG.GENERAL.ironDurability;
+	static int CopperDurability = ResourcefulTools.CONFIG.GENERAL.copperDurability;
+
 	static boolean enableHookKnife = ResourcefulTools.CONFIG.GENERAL.enableHookKnife;
 	static boolean enableTreeTrimmer = ResourcefulTools.CONFIG.GENERAL.enableTreeTrimmer;
 	static boolean enableHandTiller = ResourcefulTools.CONFIG.GENERAL.enableHandTiller;
@@ -29,8 +33,8 @@ public class ItemInit
 	public static final ToolMaterial IRON_TOOL_MATERIAL = new IronToolMaterial();
 	public static final ToolMaterial COPPER_TOOL_MATERIAL = new CopperToolMaterial();
 
-	public static final Item HOOK_KNIFE = new HookKnife(new Item.Settings().group(ResourcefulTools.RESOURCEFUL_TOOLS_GROUP));
-	public static final Item HOOK_KNIFE_COPPER = new HookKnife(new Item.Settings().group(ResourcefulTools.RESOURCEFUL_TOOLS_GROUP));
+	public static final Item HOOK_KNIFE = new HookKnife(new Item.Settings().maxDamage(ironDurability).group(ResourcefulTools.RESOURCEFUL_TOOLS_GROUP));
+	public static final Item HOOK_KNIFE_COPPER = new HookKnife(new Item.Settings().maxDamage(CopperDurability).group(ResourcefulTools.RESOURCEFUL_TOOLS_GROUP));
 	public static final Item TREE_TRIMMER = new TreeTrimmer(IRON_TOOL_MATERIAL, 0, -2.8F, new Item.Settings().group(ResourcefulTools.RESOURCEFUL_TOOLS_GROUP));
 	public static final Item TREE_TRIMMER_COPPER = new TreeTrimmer(COPPER_TOOL_MATERIAL, 0, -2.8F, new Item.Settings().group(ResourcefulTools.RESOURCEFUL_TOOLS_GROUP));
 	public static final Item HAND_TILLER = new HandTiller(IRON_TOOL_MATERIAL, 0.0F, -2.8F, new Item.Settings().group(ResourcefulTools.RESOURCEFUL_TOOLS_GROUP));
