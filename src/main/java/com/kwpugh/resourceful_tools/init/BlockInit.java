@@ -3,7 +3,6 @@ package com.kwpugh.resourceful_tools.init;
 import com.kwpugh.resourceful_tools.ResourcefulTools;
 import com.kwpugh.resourceful_tools.blocks.Lavaspring;
 import com.kwpugh.resourceful_tools.blocks.Wellspring;
-
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.Block;
 import net.minecraft.block.Material;
@@ -14,9 +13,6 @@ import net.minecraft.util.registry.Registry;
 
 public class BlockInit
 {
-	static boolean enableLavaSpring = ResourcefulTools.CONFIG.GENERAL.enableLavaSpring;
-	static boolean enableWellSpring = ResourcefulTools.CONFIG.GENERAL.enableWellSpring;
-	
 	public static final Block DIRT_SINGLE = new Block(FabricBlockSettings.of(Material.SOIL).strength(2.0F, 2.0F));
 	public static final Block DIRT_DOUBLE = new Block(FabricBlockSettings.of(Material.SOIL).strength(2.0F, 2.0F));
 	public static final Block DIRT_TRIPLE = new Block(FabricBlockSettings.of(Material.SOIL).strength(2.0F, 2.0F));
@@ -110,15 +106,8 @@ public class BlockInit
 		Registry.register(Registry.BLOCK, new Identifier(ResourcefulTools.MOD_ID, "basalt_double"), BASALT_DOUBLE);
 		Registry.register(Registry.BLOCK, new Identifier(ResourcefulTools.MOD_ID, "basalt_triple"), BASALT_TRIPLE);
 
-		if(enableLavaSpring)
-		{
-			Registry.register(Registry.BLOCK, new Identifier(ResourcefulTools.MOD_ID, "lavaspring"), LAVASPRING);
-		}
-
-		if(enableWellSpring)
-		{
-			Registry.register(Registry.BLOCK, new Identifier(ResourcefulTools.MOD_ID, "wellspring"), WELLSPRING);
-		}
+		Registry.register(Registry.BLOCK, new Identifier(ResourcefulTools.MOD_ID, "lavaspring"), LAVASPRING);
+		Registry.register(Registry.BLOCK, new Identifier(ResourcefulTools.MOD_ID, "wellspring"), WELLSPRING);
 	}
 
 	public static void registerBlockItems()
@@ -167,14 +156,7 @@ public class BlockInit
 		Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "basalt_double"), new BlockItem(BASALT_DOUBLE, new Item.Settings().group(ResourcefulTools.RESOURCEFUL_TOOLS_GROUP)));
 		Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "basalt_triple"), new BlockItem(BASALT_TRIPLE, new Item.Settings().group(ResourcefulTools.RESOURCEFUL_TOOLS_GROUP)));
 
-		if(enableLavaSpring)
-		{
-			Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "lavaspring"), new BlockItem(LAVASPRING, new Item.Settings().group(ResourcefulTools.RESOURCEFUL_TOOLS_GROUP)));
-		}
-
-		if(enableWellSpring)
-		{
-			Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "wellspring"), new BlockItem(WELLSPRING, new Item.Settings().group(ResourcefulTools.RESOURCEFUL_TOOLS_GROUP)));
-		}
+		Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "lavaspring"), new BlockItem(LAVASPRING, new Item.Settings().group(ResourcefulTools.RESOURCEFUL_TOOLS_GROUP)));
+		Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "wellspring"), new BlockItem(WELLSPRING, new Item.Settings().group(ResourcefulTools.RESOURCEFUL_TOOLS_GROUP)));
 	}
 }

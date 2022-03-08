@@ -13,27 +13,11 @@ public class ResourcefulToolsConfig extends PartitioningSerializer.GlobalData
     @Config(name = "general")
 	public static class General implements ConfigData
 	{
-		@Comment("\n"
-				+"\n"
-				+"******************************"
-				+"\nENABLE/DISABLE TOOLS"
-				+"\n******************************")
-		public boolean enableHookKnife = true;
-		public boolean enableTreeTrimmer = true;
-		public boolean enableHandPick = true;
-		public boolean enableHandTiller = true;
-		public boolean enableClamDigger = true;
-		public boolean enableCrackHammer = true;
-		public boolean enableGlassPlacer = true;
-		public boolean enableTrashCan = true;
-
     	@Comment("\n"
     			+"\n"
     			+"******************************"
     			+"\nSPRING BLOCKS"
     			+"\n******************************")
-    	public boolean enableLavaSpring = true;
-		public boolean enableWellSpring = true;
 		public boolean laveSpringPowerFurnace = true;
 		
     	@Comment("\n"

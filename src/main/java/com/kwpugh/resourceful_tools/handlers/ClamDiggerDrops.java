@@ -10,8 +10,10 @@ import net.minecraft.entity.ItemEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.registry.RegistryEntry;
 import net.minecraft.world.World;
 import net.minecraft.world.biome.Biome;
+import net.minecraft.world.biome.BiomeKeys;
 
 import java.util.Random;
 
@@ -22,9 +24,9 @@ public class ClamDiggerDrops
     public static void testForDrops(World world, PlayerEntity player, BlockPos pos, BlockState state, BlockEntity entity, ItemStack stack)
     {
         Random random = world.random;
-        Biome currentBiome = world.getBiome(pos);
 
-        if(!world.isClient && (currentBiome.getCategory() == Biome.Category.BEACH))
+        RegistryEntry<Biome> registryEntry = world.getBiome(pos);
+        if (!world.isClient && registryEntry.matchesKey(BiomeKeys.BEACH))
         {
             Block block = state.getBlock();
 
