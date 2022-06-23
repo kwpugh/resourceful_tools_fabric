@@ -29,6 +29,10 @@ public class BlockInit
 	public static final Block COBBLESTONE_DOUBLE = new Block(FabricBlockSettings.of(Material.STONE).strength(3.0F, 3.0F));
 	public static final Block COBBLESTONE_TRIPLE = new Block(FabricBlockSettings.of(Material.STONE).strength(3.0F, 3.0F));
 
+	public static final Block STONE_SINGLE = new Block(FabricBlockSettings.of(Material.STONE).strength(3.0F, 3.0F));
+	public static final Block STONE_DOUBLE = new Block(FabricBlockSettings.of(Material.STONE).strength(3.0F, 3.0F));
+	public static final Block STONE_TRIPLE = new Block(FabricBlockSettings.of(Material.STONE).strength(3.0F, 3.0F));
+
 	public static final Block ANDESITE_SINGLE = new Block(FabricBlockSettings.of(Material.STONE).strength(3.0F, 3.0F));
 	public static final Block ANDESITE_DOUBLE = new Block(FabricBlockSettings.of(Material.STONE).strength(3.0F, 3.0F));
 	public static final Block ANDESITE_TRIPLE = new Block(FabricBlockSettings.of(Material.STONE).strength(3.0F, 3.0F));
@@ -77,6 +81,10 @@ public class BlockInit
 		Registry.register(Registry.BLOCK, new Identifier(ResourcefulTools.MOD_ID, "cobblestone_single"), COBBLESTONE_SINGLE);
 		Registry.register(Registry.BLOCK, new Identifier(ResourcefulTools.MOD_ID, "cobblestone_double"), COBBLESTONE_DOUBLE);
 		Registry.register(Registry.BLOCK, new Identifier(ResourcefulTools.MOD_ID, "cobblestone_triple"), COBBLESTONE_TRIPLE);
+
+		Registry.register(Registry.BLOCK, new Identifier(ResourcefulTools.MOD_ID, "stone_single"), STONE_SINGLE);
+		Registry.register(Registry.BLOCK, new Identifier(ResourcefulTools.MOD_ID, "stone_double"), STONE_DOUBLE);
+		Registry.register(Registry.BLOCK, new Identifier(ResourcefulTools.MOD_ID, "stone_triple"), STONE_TRIPLE);
 
 		Registry.register(Registry.BLOCK, new Identifier(ResourcefulTools.MOD_ID, "andesite_single"), ANDESITE_SINGLE);
 		Registry.register(Registry.BLOCK, new Identifier(ResourcefulTools.MOD_ID, "andesite_double"), ANDESITE_DOUBLE);
@@ -127,6 +135,10 @@ public class BlockInit
 		Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "cobblestone_single"), new BlockItem(COBBLESTONE_SINGLE, new Item.Settings().group(ResourcefulTools.RESOURCEFUL_TOOLS_GROUP)));
 		Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "cobblestone_double"), new BlockItem(COBBLESTONE_DOUBLE, new Item.Settings().group(ResourcefulTools.RESOURCEFUL_TOOLS_GROUP)));
 		Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "cobblestone_triple"), new BlockItem(COBBLESTONE_TRIPLE, new Item.Settings().group(ResourcefulTools.RESOURCEFUL_TOOLS_GROUP)));
+
+		Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "stone_single"), new BlockItem(STONE_SINGLE, new Item.Settings().group(ResourcefulTools.RESOURCEFUL_TOOLS_GROUP)));
+		Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "stone_double"), new BlockItem(STONE_DOUBLE, new Item.Settings().group(ResourcefulTools.RESOURCEFUL_TOOLS_GROUP)));
+		Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "stone_triple"), new BlockItem(STONE_TRIPLE, new Item.Settings().group(ResourcefulTools.RESOURCEFUL_TOOLS_GROUP)));
 
 		Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "andesite_single"), new BlockItem(ANDESITE_SINGLE, new Item.Settings().group(ResourcefulTools.RESOURCEFUL_TOOLS_GROUP)));
 		Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "andesite_double"), new BlockItem(ANDESITE_DOUBLE, new Item.Settings().group(ResourcefulTools.RESOURCEFUL_TOOLS_GROUP)));

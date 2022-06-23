@@ -1,7 +1,5 @@
 package com.kwpugh.resourceful_tools.items;
 
-import java.util.List;
-
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
@@ -12,7 +10,6 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.text.Text;
-import net.minecraft.text.TranslatableText;
 import net.minecraft.util.Formatting;
 import net.minecraft.util.Hand;
 import net.minecraft.util.TypedActionResult;
@@ -21,6 +18,8 @@ import net.minecraft.util.math.MathHelper;
 import net.minecraft.util.math.Vec3d;
 import net.minecraft.world.RaycastContext;
 import net.minecraft.world.World;
+
+import java.util.List;
 
 public class GlassPlacer extends Item
 {
@@ -77,7 +76,7 @@ public class GlassPlacer extends Item
 	@Override
 	public void appendTooltip(ItemStack itemStack, World world, List<Text> tooltip, TooltipContext tooltipContext)
 	{
-		tooltip.add(new TranslatableText("item.resourceful_tools.glass_placer.line1").formatted(Formatting.YELLOW));
-		tooltip.add(new TranslatableText("item.resourceful_tools.glass_placer.line2").formatted(Formatting.YELLOW));
+		tooltip.add(Text.translatable("item.resourceful_tools.glass_placer.line1").formatted(Formatting.YELLOW));
+		tooltip.add(Text.translatable("item.resourceful_tools.glass_placer.line2").formatted(Formatting.YELLOW));
 	} 
 }

@@ -18,7 +18,6 @@ import net.minecraft.item.Items;
 import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.text.Text;
-import net.minecraft.text.TranslatableText;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.Formatting;
 import net.minecraft.util.Hand;
@@ -136,8 +135,8 @@ public class HookKnife extends Item implements CustomRecipeRemainder
 	@Override
 	public void appendTooltip(ItemStack itemStack, World world, List<Text> tooltip, TooltipContext tooltipContext)
 	{
-		tooltip.add(new TranslatableText("item.resourceful_tools.hook_knife.line1").formatted(Formatting.YELLOW));
-		tooltip.add(new TranslatableText("item.resourceful_tools.hook_knife.line2").formatted(Formatting.YELLOW));
+		tooltip.add(Text.translatable("item.resourceful_tools.hook_knife.line1").formatted(Formatting.YELLOW));
+		tooltip.add(Text.translatable("item.resourceful_tools.hook_knife.line2").formatted(Formatting.YELLOW));
 	} 
 }
 

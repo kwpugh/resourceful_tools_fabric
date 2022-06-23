@@ -19,9 +19,9 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 @Mixin(AbstractFurnaceBlockEntity.class)
 abstract class AbstractFurnaceBlockEntityMixin extends BlockEntity
 {
-    @Shadow private int burnTime;
-    @Shadow private int cookTime;
-    @Shadow private int cookTimeTotal;
+    @Shadow int burnTime;
+    @Shadow int cookTime;
+    @Shadow int cookTimeTotal;
 
     boolean lavaPowersFurnace = ResourcefulTools.CONFIG.GENERAL.laveSpringPowerFurnace;
 

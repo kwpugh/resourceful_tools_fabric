@@ -27,7 +27,7 @@ public class HandPickDrops
 
     public static void testForDrops(World world, PlayerEntity player, BlockPos pos, BlockState state, BlockEntity entity, ItemStack stack)
     {
-        Random random = world.random;
+        Random random = new Random();
 
         Block block = state.getBlock();
 

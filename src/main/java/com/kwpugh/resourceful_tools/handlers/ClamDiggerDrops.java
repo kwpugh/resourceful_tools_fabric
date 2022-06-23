@@ -23,7 +23,7 @@ public class ClamDiggerDrops
 
     public static void testForDrops(World world, PlayerEntity player, BlockPos pos, BlockState state, BlockEntity entity, ItemStack stack)
     {
-        Random random = world.random;
+        Random random = new Random();
 
         RegistryEntry<Biome> registryEntry = world.getBiome(pos);
         if (!world.isClient && registryEntry.matchesKey(BiomeKeys.BEACH))
