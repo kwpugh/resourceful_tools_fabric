@@ -17,6 +17,7 @@ public class CrackHammer extends Item implements CustomRecipeRemainder
 		super(properties);
 	}
 
+
     @Override
     public boolean hasRecipeRemainder()
     {
