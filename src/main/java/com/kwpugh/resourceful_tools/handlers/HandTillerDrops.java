@@ -31,7 +31,7 @@ public class HandTillerDrops
             if(block == Blocks.GRAVEL)
             {
                 double r = random.nextDouble();
-                if (r <= clay)
+                if (r <= gravel)
                 {
                     world.spawnEntity(new ItemEntity(world, pos.getX(), pos.getY(), pos.getZ(), new ItemStack(ItemInit.BONE_FRAGMENT, 1)));
                 }
@@ -39,7 +39,7 @@ public class HandTillerDrops
             else if(block == Blocks.CLAY)
             {
                 double r = random.nextDouble();
-                if (r <= gravel)
+                if (r <= clay)
                 {
                     world.spawnEntity(new ItemEntity(world, pos.getX(), pos.getY(), pos.getZ(), new ItemStack(Items.INK_SAC, 1)));
                 }

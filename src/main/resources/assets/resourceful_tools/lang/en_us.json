@@ -177,5 +177,8 @@
 	"block.resourceful_tools.lavaspring": "Lava Spring",
 	"item.resourceful_tools.lavaspring": "Lava Spring",
 
+	"enchantment.resourceful_tools.resourcefulness": "Resourcefulness",
+	"enchantment.resourceful_tools.resourcefulness.desc": "Resourceful Tools: (Pickaxe/Shovel/Hoe) Provides resourceful drops with regular tools",
+
 	"itemGroup.resourceful_tools.resourceful_tools_group": "Resourceful Tools"
 }
