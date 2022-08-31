@@ -16,9 +16,11 @@ public class ResourcefulToolsConfig extends PartitioningSerializer.GlobalData
     	@Comment("\n"
     			+"\n"
     			+"******************************"
-    			+"\nSPRING BLOCKS"
+    			+"\nFurnace Sources"
     			+"\n******************************")
 		public boolean laveSpringPowerFurnace = true;
+		public boolean campfirePowerFurnace = true;
+		public boolean lavasourcePowerFurnace = true;
 		
     	@Comment("\n"
     			+"\n"

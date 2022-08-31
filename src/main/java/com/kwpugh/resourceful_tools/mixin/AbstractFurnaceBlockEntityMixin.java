@@ -1,13 +1,16 @@
 package com.kwpugh.resourceful_tools.mixin;
 
 import com.kwpugh.resourceful_tools.ResourcefulTools;
-import com.kwpugh.resourceful_tools.api.LavaSource;
+import com.kwpugh.resourceful_tools.api.FuelSource;
 import net.minecraft.block.BlockState;
 
+import net.minecraft.block.Blocks;
+import net.minecraft.block.CampfireBlock;
 import net.minecraft.block.entity.AbstractFurnaceBlockEntity;
 import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.block.entity.BlockEntityType;
 
+import net.minecraft.fluid.LavaFluid;
 import net.minecraft.util.math.BlockPos;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Shadow;
@@ -23,7 +26,9 @@ abstract class AbstractFurnaceBlockEntityMixin extends BlockEntity
     @Shadow int cookTime;
     @Shadow int cookTimeTotal;
 
-    boolean lavaPowersFurnace = ResourcefulTools.CONFIG.GENERAL.laveSpringPowerFurnace;
+    boolean lavaSpringPowersFurnace = ResourcefulTools.CONFIG.GENERAL.laveSpringPowerFurnace;
+    boolean campfireFurnace = ResourcefulTools.CONFIG.GENERAL.campfirePowerFurnace;
+    boolean lavaSourcePowersFurnace = ResourcefulTools.CONFIG.GENERAL.lavasourcePowerFurnace;
 
     public AbstractFurnaceBlockEntityMixin(BlockEntityType<?> type, BlockPos pos, BlockState state)
     {
@@ -33,13 +38,14 @@ abstract class AbstractFurnaceBlockEntityMixin extends BlockEntity
     @Inject(method = "isBurning", at = @At("RETURN"))
     public void isBurning(CallbackInfoReturnable<Boolean> cir)
     {
-        if (world != null && !world.isClient && lavaPowersFurnace)
+        // Lava Spring source
+        if (world != null && !world.isClient && lavaSpringPowersFurnace)
     	{
     	    // if next to a furnace, blast furnace, or smoker, keep fuel constant and speed up process
-    		if( (this.world.getBlockState(this.pos.north()).getBlock() instanceof LavaSource)  ||
-    			  (this.world.getBlockState(this.pos.south()).getBlock() instanceof LavaSource) ||
-    			  (this.world.getBlockState(this.pos.east()).getBlock() instanceof LavaSource) ||
-    			  (this.world.getBlockState(this.pos.west()).getBlock() instanceof LavaSource))
+    		if( (this.world.getBlockState(this.pos.north()).getBlock() instanceof FuelSource)  ||
+    			  (this.world.getBlockState(this.pos.south()).getBlock() instanceof FuelSource) ||
+    			  (this.world.getBlockState(this.pos.east()).getBlock() instanceof FuelSource) ||
+    			  (this.world.getBlockState(this.pos.west()).getBlock() instanceof FuelSource))
     		{
                 this.burnTime = 400;
 
@@ -52,5 +58,25 @@ abstract class AbstractFurnaceBlockEntityMixin extends BlockEntity
     			}
     		}
     	}
+
+        // Campfire source
+        if (world != null && !world.isClient && campfireFurnace)
+        {
+            // if next to a furnace, blast furnace, or smoker, keep fuel constant and speed up process
+            if(this.world.getBlockState(this.pos.down()).getBlock() instanceof CampfireBlock)
+            {
+                this.burnTime = 400;
+            }
+        }
+
+        // Lava source block
+        if (world != null && !world.isClient && lavaSourcePowersFurnace)
+        {
+            // if next to a furnace, blast furnace, or smoker, keep fuel constant and speed up process
+            if(this.world.getBlockState(this.pos.down()).getBlock().equals(Blocks.LAVA))
+            {
+                this.burnTime = 400;
+            }
+        }
     }
 }

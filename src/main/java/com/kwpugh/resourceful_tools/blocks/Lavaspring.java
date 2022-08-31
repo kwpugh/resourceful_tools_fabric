@@ -1,6 +1,6 @@
 package com.kwpugh.resourceful_tools.blocks;
 
-import com.kwpugh.resourceful_tools.api.LavaSource;
+import com.kwpugh.resourceful_tools.api.FuelSource;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockRenderType;
@@ -20,7 +20,7 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
 import net.minecraft.world.World;
 
-public class Lavaspring extends Block implements LavaSource
+public class Lavaspring extends Block implements FuelSource
 {	
 	public Lavaspring(Settings settings)
 	{
