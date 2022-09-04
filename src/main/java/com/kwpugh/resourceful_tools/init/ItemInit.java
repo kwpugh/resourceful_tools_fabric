@@ -57,16 +57,18 @@ public class ItemInit
 	public static final Item GHAST_TEAR_FRAGMENT = new Item(new Item.Settings().group(ResourcefulTools.RESOURCEFUL_TOOLS_GROUP));
 	public static final Item NETHER_STAR_FRAGMENT = new Item(new Item.Settings().group(ResourcefulTools.RESOURCEFUL_TOOLS_GROUP));
 	public static final Item NETHERITE_FRAGMENT = new Item(new Item.Settings().group(ResourcefulTools.RESOURCEFUL_TOOLS_GROUP));
- 
+
 	public static final Item BAMBOO_SHEET = new Item(new Item.Settings().group(ResourcefulTools.RESOURCEFUL_TOOLS_GROUP));
 	public static final Item LARGE_BAMBOO_SHEET = new Item(new Item.Settings().group(ResourcefulTools.RESOURCEFUL_TOOLS_GROUP));
-
-	public static final Item JERKY = new Item(new Item.Settings().food(FoodList.jerky).group(ResourcefulTools.RESOURCEFUL_TOOLS_GROUP));
 	public static final Item REAM_OF_PAPER = new Item(new Item.Settings().group(ResourcefulTools.RESOURCEFUL_TOOLS_GROUP));
+
 	public static final Item CLAM = new Item(new Item.Settings().group(ResourcefulTools.RESOURCEFUL_TOOLS_GROUP));
 	public static final Item RAW_CLAM = new Item(new Item.Settings().group(ResourcefulTools.RESOURCEFUL_TOOLS_GROUP));
 	public static final Item COOKED_CLAM = new Item(new Item.Settings().food(FoodList.cooked_clam).group(ResourcefulTools.RESOURCEFUL_TOOLS_GROUP));
-	 
+	public static final Item JERKY = new Item(new Item.Settings().food(FoodList.jerky).group(ResourcefulTools.RESOURCEFUL_TOOLS_GROUP));
+	public static final Item ACORN = new Item(new Item.Settings().food(FoodList.acorn).group(ResourcefulTools.RESOURCEFUL_TOOLS_GROUP));
+	public static final Item ACORN_DARK = new Item(new Item.Settings().food(FoodList.acorn_dark).group(ResourcefulTools.RESOURCEFUL_TOOLS_GROUP));
+
 	public static void registerItems()
 	{
 		Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "hook_knife_copper"), HOOK_KNIFE_COPPER);
@@ -106,12 +108,14 @@ public class ItemInit
 	 
 		Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "bamboo_sheet"), BAMBOO_SHEET);
 		Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "large_bamboo_sheet"), LARGE_BAMBOO_SHEET);
+		Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "ream_of_paper"), REAM_OF_PAPER);
 
-		Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "jerky"), JERKY);
 		Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "clam"), CLAM);
 		Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "raw_clam"), RAW_CLAM);
 		Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "cooked_clam"), COOKED_CLAM);
-		Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "ream_of_paper"), REAM_OF_PAPER);
+		Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "jerky"), JERKY);
+		Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "acorn"), ACORN);
+		Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "acorn_dark"), ACORN_DARK);
 
 		Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "trash_can"), TRASH_CAN);
 	} 

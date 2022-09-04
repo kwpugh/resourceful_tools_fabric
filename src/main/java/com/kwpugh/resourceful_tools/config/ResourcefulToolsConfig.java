@@ -78,6 +78,22 @@ public class ResourcefulToolsConfig extends PartitioningSerializer.GlobalData
 		public double kelpDropChance = .05D;
 		public double eggDropChance = .35D;
 		public double phantomMembraneDropChance = .15D;
+		public double acornDropChance = .05D;
+		public double acornDarkDropChance = .05D;
+
+		@Comment("\n"
+				+"\n"
+				+"******************************"
+				+ "\nFood Settings"
+				+"\n******************************")
+		public int jerky_hunger = 4;
+		public float jerky_saturation = 0.4F;
+		public int cooked_clam_hunger = 5;
+		public float cooked_clam_saturation = 0.7F;
+		public int acorn_hunger = 6;
+		public float acorn_saturation = 0.9F;
+		public int acorn_dark_hunger = 6;
+		public float acorn_dark_saturation = 0.9F;
 
 		@Comment("\n"
 				+"\n"

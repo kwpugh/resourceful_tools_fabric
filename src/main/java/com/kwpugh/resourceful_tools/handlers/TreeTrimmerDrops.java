@@ -27,6 +27,8 @@ public class TreeTrimmerDrops
     static double kelp = ResourcefulTools.CONFIG.GENERAL.kelpDropChance;
     static double egg = ResourcefulTools.CONFIG.GENERAL.eggDropChance;
     static double membrane = ResourcefulTools.CONFIG.GENERAL.phantomMembraneDropChance;
+    static double acorn = ResourcefulTools.CONFIG.GENERAL.acornDropChance;
+    static double acorn_dark = ResourcefulTools.CONFIG.GENERAL.acornDarkDropChance;
 
     public static void testForDrops(World world, PlayerEntity player, BlockPos pos, BlockState state, BlockEntity entity, ItemStack stack)
     {
@@ -59,6 +61,11 @@ public class TreeTrimmerDrops
                 {
                     world.spawnEntity(new ItemEntity(world, pos.getX(), pos.getY(), pos.getZ(), new ItemStack(Items.APPLE, 1)));
                 }
+
+                if (r <= acorn)
+                {
+                    world.spawnEntity(new ItemEntity(world, pos.getX(), pos.getY(), pos.getZ(), new ItemStack(ItemInit.ACORN, 1)));
+                }
             }
             else if(block == Blocks.ACACIA_LEAVES)
             {
@@ -82,6 +89,11 @@ public class TreeTrimmerDrops
                 if (r <= darkoak)
                 {
                     world.spawnEntity(new ItemEntity(world, pos.getX(), pos.getY(), pos.getZ(), new ItemStack(ItemInit.PEARL_FRAGMENT, 1)));
+                }
+
+                if (r <= acorn_dark)
+                {
+                    world.spawnEntity(new ItemEntity(world, pos.getX(), pos.getY(), pos.getZ(), new ItemStack(ItemInit.ACORN_DARK, 1)));
                 }
             }
             else if(block == Blocks.TALL_SEAGRASS)

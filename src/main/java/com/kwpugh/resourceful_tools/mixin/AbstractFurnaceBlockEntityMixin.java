@@ -2,15 +2,16 @@ package com.kwpugh.resourceful_tools.mixin;
 
 import com.kwpugh.resourceful_tools.ResourcefulTools;
 import com.kwpugh.resourceful_tools.api.FuelSource;
-import net.minecraft.block.BlockState;
+import net.fabricmc.fabric.api.transfer.v1.fluid.CauldronFluidContent;
+import net.minecraft.block.*;
 
-import net.minecraft.block.Blocks;
-import net.minecraft.block.CampfireBlock;
+import net.minecraft.block.cauldron.CauldronBehavior;
 import net.minecraft.block.entity.AbstractFurnaceBlockEntity;
 import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.block.entity.BlockEntityType;
 
 import net.minecraft.fluid.LavaFluid;
+import net.minecraft.sound.SoundEvents;
 import net.minecraft.util.math.BlockPos;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Shadow;
@@ -62,7 +63,6 @@ abstract class AbstractFurnaceBlockEntityMixin extends BlockEntity
         // Campfire source
         if (world != null && !world.isClient && campfireFurnace)
         {
-            // if next to a furnace, blast furnace, or smoker, keep fuel constant and speed up process
             if(this.world.getBlockState(this.pos.down()).getBlock() instanceof CampfireBlock)
             {
                 this.burnTime = 400;
@@ -72,7 +72,6 @@ abstract class AbstractFurnaceBlockEntityMixin extends BlockEntity
         // Lava source block
         if (world != null && !world.isClient && lavaSourcePowersFurnace)
         {
-            // if next to a furnace, blast furnace, or smoker, keep fuel constant and speed up process
             if(this.world.getBlockState(this.pos.down()).getBlock().equals(Blocks.LAVA))
             {
                 this.burnTime = 400;

@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "resourceful_tools:acorn_dark"
+        }
+    ],
+    "result": {
+        "item": "minecraft:dark_oak_log",
+        "count": 64
+    }
+}

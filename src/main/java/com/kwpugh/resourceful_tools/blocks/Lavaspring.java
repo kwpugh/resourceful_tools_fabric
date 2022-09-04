@@ -33,7 +33,6 @@ public class Lavaspring extends Block implements FuelSource
     {    
     	ItemStack stack = player.getStackInHand(hand);
 
-
         if (stack.getItem() == Items.BUCKET && !player.isCreative())
         {
             ItemStack itemstack1;
