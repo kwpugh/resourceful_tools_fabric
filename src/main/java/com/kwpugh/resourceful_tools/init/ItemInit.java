@@ -52,6 +52,7 @@ public class ItemInit
 	public static final Item POWDER_SALTPETER = new Item(new Item.Settings().group(ResourcefulTools.RESOURCEFUL_TOOLS_GROUP));
 	public static final Item POWDER_SULFUR = new Item(new Item.Settings().group(ResourcefulTools.RESOURCEFUL_TOOLS_GROUP));
 	public static final Item BONE_FRAGMENT = new Item(new Item.Settings().group(ResourcefulTools.RESOURCEFUL_TOOLS_GROUP));
+	public static final Item BIT_O_SLIME = new Item(new Item.Settings().group(ResourcefulTools.RESOURCEFUL_TOOLS_GROUP));
 	public static final Item SMALL_BLAZE_POWDER = new Item(new Item.Settings().group(ResourcefulTools.RESOURCEFUL_TOOLS_GROUP));
 	public static final Item PEARL_FRAGMENT = new Item(new Item.Settings().group(ResourcefulTools.RESOURCEFUL_TOOLS_GROUP));
 	public static final Item GHAST_TEAR_FRAGMENT = new Item(new Item.Settings().group(ResourcefulTools.RESOURCEFUL_TOOLS_GROUP));
@@ -100,6 +101,7 @@ public class ItemInit
 		Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "powder_saltpeter"), POWDER_SALTPETER);
 		Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "powder_sulfur"), POWDER_SULFUR);
 		Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "bone_fragment"), BONE_FRAGMENT);
+		Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "bit_o_slime"), BIT_O_SLIME);
 		Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "small_blaze_powder"), SMALL_BLAZE_POWDER);
 		Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "pearl_fragment"), PEARL_FRAGMENT);
 		Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "ghast_tear_fragment"), GHAST_TEAR_FRAGMENT);

@@ -17,8 +17,9 @@ import java.util.Random;
 
 public class HandTillerDrops
 {
-    static double clay = ResourcefulTools.CONFIG.GENERAL.clayDropChance;
-    static double gravel = ResourcefulTools.CONFIG.GENERAL.gravelDropChance;
+    static double ink = ResourcefulTools.CONFIG.GENERAL.clayInkDropChance;
+    static double bone = ResourcefulTools.CONFIG.GENERAL.gravelBoneDropChance;
+    static double slime = ResourcefulTools.CONFIG.GENERAL.rootedDirtlimeDropChance;
 
     public static void testForDrops(World world, PlayerEntity player, BlockPos pos, BlockState state, BlockEntity entity, ItemStack stack)
     {
@@ -31,7 +32,7 @@ public class HandTillerDrops
             if(block == Blocks.GRAVEL)
             {
                 double r = random.nextDouble();
-                if (r <= gravel)
+                if (r <= bone)
                 {
                     world.spawnEntity(new ItemEntity(world, pos.getX(), pos.getY(), pos.getZ(), new ItemStack(ItemInit.BONE_FRAGMENT, 1)));
                 }
@@ -39,9 +40,17 @@ public class HandTillerDrops
             else if(block == Blocks.CLAY)
             {
                 double r = random.nextDouble();
-                if (r <= clay)
+                if (r <= ink)
                 {
                     world.spawnEntity(new ItemEntity(world, pos.getX(), pos.getY(), pos.getZ(), new ItemStack(Items.INK_SAC, 1)));
+                }
+            }
+            else if(block == Blocks.ROOTED_DIRT)
+            {
+                double r = random.nextDouble();
+                if (r <= slime)
+                {
+                    world.spawnEntity(new ItemEntity(world, pos.getX(), pos.getY(), pos.getZ(), new ItemStack(ItemInit.BIT_O_SLIME, 1)));
                 }
             }
         }

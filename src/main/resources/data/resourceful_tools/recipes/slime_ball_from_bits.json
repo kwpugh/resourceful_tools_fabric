@@ -1,0 +1,24 @@
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+        "AAA",
+        "AAA",
+        "AAA"
+    ],
+    
+    "key":
+    {
+        "A":
+        {
+            "item": "resourceful_tools:bit_o_slime"
+        }
+    },
+    
+    "result":
+    {
+        "item": "minecraft:slime_ball",
+        "count": 1
+    }
+}

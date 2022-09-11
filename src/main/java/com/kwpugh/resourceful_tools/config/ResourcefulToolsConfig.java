@@ -51,8 +51,9 @@ public class ResourcefulToolsConfig extends PartitioningSerializer.GlobalData
 				+"\nHAND TILLER"
 				+"\n- drop chance value between 0.0-1.0"
 				+"\n******************************")
-		public double clayDropChance = .20D;
-		public double gravelDropChance = .20D;
+		public double clayInkDropChance = .20D;
+		public double gravelBoneDropChance = .20D;
+		public double rootedDirtlimeDropChance = .20D;
 
 		@Comment("\n"
 				+"\n"
@@ -76,8 +77,8 @@ public class ResourcefulToolsConfig extends PartitioningSerializer.GlobalData
 		public double darkOakDropChance = .05D;
 		public double seagrassDropChance = .05D;
 		public double kelpDropChance = .05D;
-		public double eggDropChance = .35D;
-		public double phantomMembraneDropChance = .15D;
+		public double eggDropChance = .20D;
+		public double phantomMembraneDropChance = .10D;
 		public double acornDropChance = .05D;
 		public double acornDarkDropChance = .05D;
 
