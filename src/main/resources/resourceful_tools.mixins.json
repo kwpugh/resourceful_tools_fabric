@@ -4,9 +4,12 @@
   "package": "com.kwpugh.resourceful_tools.mixin",
   "compatibilityLevel": "JAVA_16",
   "mixins": [
-    "AbstractFurnaceBlockEntityMixin"
+    "AbstractFurnaceBlockEntityMixin",
+    "CampfireBlockMixin"
   ],
-  "client": [],
+  "client": [
+    "CampfireSmokeParticleMixin"
+  ],
   "server": [],
   "injectors": {
     "defaultRequire": 1
