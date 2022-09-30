@@ -16,11 +16,20 @@ public class ResourcefulToolsConfig extends PartitioningSerializer.GlobalData
     	@Comment("\n"
     			+"\n"
     			+"******************************"
-    			+"\nFurnace Sources"
+    			+"\nFurnace fueling Sources"
     			+"\n******************************")
 		public boolean laveSpringPowerFurnace = true;
-		public boolean campfirePowerFurnace = true;
-		public boolean lavasourcePowerFurnace = true;
+		public boolean campfirePowerFurnace = false;
+		public boolean lavaSourcePowerFurnace = false;
+
+		@Comment("\n"
+				+"\n"
+				+"******************************"
+				+"\nBrewingStand fueling Sources"
+				+"\n******************************")
+		public boolean lavaSpringPowerBrewingStand = true;
+		public boolean campfirePowerBrewingStand = false;
+		public boolean lavaSourcePowerBrewingStand = false;
 		
     	@Comment("\n"
     			+"\n"

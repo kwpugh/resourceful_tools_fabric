@@ -29,7 +29,7 @@ abstract class AbstractFurnaceBlockEntityMixin extends BlockEntity
 
     boolean lavaSpringPowersFurnace = ResourcefulTools.CONFIG.GENERAL.laveSpringPowerFurnace;
     boolean campfireFurnace = ResourcefulTools.CONFIG.GENERAL.campfirePowerFurnace;
-    boolean lavaSourcePowersFurnace = ResourcefulTools.CONFIG.GENERAL.lavasourcePowerFurnace;
+    boolean lavaSourcePowersFurnace = ResourcefulTools.CONFIG.GENERAL.lavaSourcePowerFurnace;
 
     public AbstractFurnaceBlockEntityMixin(BlockEntityType<?> type, BlockPos pos, BlockState state)
     {
@@ -37,7 +37,7 @@ abstract class AbstractFurnaceBlockEntityMixin extends BlockEntity
     }
 
     @Inject(method = "isBurning", at = @At("RETURN"))
-    public void isBurning(CallbackInfoReturnable<Boolean> cir)
+    public void resourcefulIsBurning(CallbackInfoReturnable<Boolean> cir)
     {
         // Lava Spring source
         if (world != null && !world.isClient && lavaSpringPowersFurnace)

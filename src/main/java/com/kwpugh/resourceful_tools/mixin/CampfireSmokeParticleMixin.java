@@ -20,10 +20,10 @@ public abstract class CampfireSmokeParticleMixin extends SpriteBillboardParticle
     }
 
     @Inject(method = "<init>", at = @At(value = "RETURN"))
-    private void CC$setColor(ClientWorld world, double x, double y, double z, double velocityX, double velocityY, double velocityZ, boolean bl, CallbackInfo ci)
+    private void resourcefulInit(ClientWorld world, double x, double y, double z, double velocityX, double velocityY, double velocityZ, boolean bl, CallbackInfo ci)
     {
         BlockPos pos = new BlockPos(velocityX, velocityY, velocityZ);
-        if (world.getBlockState(pos).getBlock() instanceof CampfireBlock && world.isReceivingRedstonePower(pos))
+        if(world.getBlockState(pos).getBlock() instanceof CampfireBlock && world.isReceivingRedstonePower(pos))
         {
             int color = world.getBlockState(pos.down()).getMapColor(world, null).color;
             float[] rgb = ColorUtil.getColorForBlock(color);
