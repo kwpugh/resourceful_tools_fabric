@@ -4,8 +4,10 @@ import com.kwpugh.resourceful_tools.ResourcefulTools;
 import com.kwpugh.resourceful_tools.api.FuelSource;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
+import net.minecraft.block.Blocks;
 import net.minecraft.block.CampfireBlock;
 import net.minecraft.block.entity.BrewingStandBlockEntity;
+import net.minecraft.fluid.LavaFluid;
 import net.minecraft.nbt.NbtCompound;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
@@ -38,6 +40,11 @@ abstract class BrewingStandBlockEntityMixin
             }
 
             if(ResourcefulTools.CONFIG.GENERAL.campfirePowerBrewingStand && block instanceof CampfireBlock)
+            {
+                this.fuel = 20;
+            }
+
+            if(ResourcefulTools.CONFIG.GENERAL.lavaSourcePowerBrewingStand && block.equals(Blocks.LAVA))
             {
                 this.fuel = 20;
             }

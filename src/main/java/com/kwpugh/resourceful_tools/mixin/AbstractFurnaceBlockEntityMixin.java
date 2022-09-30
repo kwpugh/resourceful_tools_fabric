@@ -40,42 +40,90 @@ abstract class AbstractFurnaceBlockEntityMixin extends BlockEntity
     public void resourcefulIsBurning(CallbackInfoReturnable<Boolean> cir)
     {
         // Lava Spring source
-        if (world != null && !world.isClient && lavaSpringPowersFurnace)
-    	{
-    	    // if next to a furnace, blast furnace, or smoker, keep fuel constant and speed up process
-    		if( (this.world.getBlockState(this.pos.north()).getBlock() instanceof FuelSource)  ||
-    			  (this.world.getBlockState(this.pos.south()).getBlock() instanceof FuelSource) ||
-    			  (this.world.getBlockState(this.pos.east()).getBlock() instanceof FuelSource) ||
-    			  (this.world.getBlockState(this.pos.west()).getBlock() instanceof FuelSource))
-    		{
-                this.burnTime = 400;
-
-                if(this.cookTime > 0)
-    			{
-    				if(this.cookTime < this.cookTimeTotal - 1)
-    				{
-    					this.cookTime = this.cookTime + 1;  // Increase rate of cooking by an additional 4
-    				}
-    			}
-    		}
-    	}
-
-        // Campfire source
-        if (world != null && !world.isClient && campfireFurnace)
+        if(world != null && !world.isClient)
         {
-            if(this.world.getBlockState(this.pos.down()).getBlock() instanceof CampfireBlock)
+            if(lavaSpringPowersFurnace)
             {
-                this.burnTime = 400;
+                // if next to a furnace, blast furnace, or smoker, keep fuel constant and speed up process
+                if( (this.world.getBlockState(this.pos.north()).getBlock() instanceof FuelSource)  ||
+                        (this.world.getBlockState(this.pos.south()).getBlock() instanceof FuelSource) ||
+                        (this.world.getBlockState(this.pos.east()).getBlock() instanceof FuelSource) ||
+                        (this.world.getBlockState(this.pos.west()).getBlock() instanceof FuelSource))
+                {
+                    this.burnTime = 400;
+
+                    if(this.cookTime > 0)
+                    {
+                        if(this.cookTime < this.cookTimeTotal - 1)
+                        {
+                            this.cookTime = this.cookTime + 1;  // Increase rate of cooking by an additional 4
+                        }
+                    }
+                }
+            }
+
+            // Campfire source
+            if(campfireFurnace)
+            {
+                if(this.world.getBlockState(this.pos.down()).getBlock() instanceof CampfireBlock)
+                {
+                    this.burnTime = 400;
+                }
+            }
+
+            // Lava source block
+            if(lavaSourcePowersFurnace)
+            {
+                if(this.world.getBlockState(this.pos.down()).getBlock().equals(Blocks.LAVA))
+                {
+                    this.burnTime = 400;
+                }
             }
         }
 
-        // Lava source block
-        if (world != null && !world.isClient && lavaSourcePowersFurnace)
-        {
-            if(this.world.getBlockState(this.pos.down()).getBlock().equals(Blocks.LAVA))
-            {
-                this.burnTime = 400;
-            }
-        }
+
+
+
+
+
+
+//        // Lava Spring source
+//        if (world != null && !world.isClient && lavaSpringPowersFurnace)
+//    	{
+//    	    // if next to a furnace, blast furnace, or smoker, keep fuel constant and speed up process
+//    		if( (this.world.getBlockState(this.pos.north()).getBlock() instanceof FuelSource)  ||
+//    			  (this.world.getBlockState(this.pos.south()).getBlock() instanceof FuelSource) ||
+//    			  (this.world.getBlockState(this.pos.east()).getBlock() instanceof FuelSource) ||
+//    			  (this.world.getBlockState(this.pos.west()).getBlock() instanceof FuelSource))
+//    		{
+//                this.burnTime = 400;
+//
+//                if(this.cookTime > 0)
+//    			{
+//    				if(this.cookTime < this.cookTimeTotal - 1)
+//    				{
+//    					this.cookTime = this.cookTime + 1;  // Increase rate of cooking by an additional 4
+//    				}
+//    			}
+//    		}
+//    	}
+//
+//        // Campfire source
+//        if (world != null && !world.isClient && campfireFurnace)
+//        {
+//            if(this.world.getBlockState(this.pos.down()).getBlock() instanceof CampfireBlock)
+//            {
+//                this.burnTime = 400;
+//            }
+//        }
+//
+//        // Lava source block
+//        if (world != null && !world.isClient && lavaSourcePowersFurnace)
+//        {
+//            if(this.world.getBlockState(this.pos.down()).getBlock().equals(Blocks.LAVA))
+//            {
+//                this.burnTime = 400;
+//            }
+//        }
     }
 }
