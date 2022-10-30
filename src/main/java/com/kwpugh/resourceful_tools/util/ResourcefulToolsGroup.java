@@ -21,7 +21,7 @@ public class ResourcefulToolsGroup
         @Override
         public ItemStack createIcon()
         {
-            return new ItemStack(ItemInit.HAND_TILLER);
+            return new ItemStack(ItemInit.TREE_TRIMMER);
         }
 
         @Override
