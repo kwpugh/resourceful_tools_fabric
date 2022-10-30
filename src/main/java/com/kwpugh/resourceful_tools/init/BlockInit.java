@@ -120,55 +120,55 @@ public class BlockInit
 
 	public static void registerBlockItems()
 	{
-		Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "dirt_single"), new BlockItem(DIRT_SINGLE, new Item.Settings().group(ResourcefulTools.RESOURCEFUL_TOOLS_GROUP)));
-		Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "dirt_double"), new BlockItem(DIRT_DOUBLE, new Item.Settings().group(ResourcefulTools.RESOURCEFUL_TOOLS_GROUP)));
-		Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "dirt_triple"), new BlockItem(DIRT_TRIPLE, new Item.Settings().group(ResourcefulTools.RESOURCEFUL_TOOLS_GROUP)));
+		Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "dirt_single"), new BlockItem(DIRT_SINGLE, new Item.Settings()));
+		Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "dirt_double"), new BlockItem(DIRT_DOUBLE, new Item.Settings()));
+		Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "dirt_triple"), new BlockItem(DIRT_TRIPLE, new Item.Settings()));
 
-		Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "gravel_single"), new BlockItem(GRAVEL_SINGLE, new Item.Settings().group(ResourcefulTools.RESOURCEFUL_TOOLS_GROUP)));
-		Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "gravel_double"), new BlockItem(GRAVEL_DOUBLE, new Item.Settings().group(ResourcefulTools.RESOURCEFUL_TOOLS_GROUP)));
-		Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "gravel_triple"), new BlockItem(GRAVEL_TRIPLE, new Item.Settings().group(ResourcefulTools.RESOURCEFUL_TOOLS_GROUP)));
+		Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "gravel_single"), new BlockItem(GRAVEL_SINGLE, new Item.Settings()));
+		Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "gravel_double"), new BlockItem(GRAVEL_DOUBLE, new Item.Settings()));
+		Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "gravel_triple"), new BlockItem(GRAVEL_TRIPLE, new Item.Settings()));
 
-		Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "sand_single"), new BlockItem(SAND_SINGLE, new Item.Settings().group(ResourcefulTools.RESOURCEFUL_TOOLS_GROUP)));
-		Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "sand_double"), new BlockItem(SAND_DOUBLE, new Item.Settings().group(ResourcefulTools.RESOURCEFUL_TOOLS_GROUP)));
-		Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "sand_triple"), new BlockItem(SAND_TRIPLE, new Item.Settings().group(ResourcefulTools.RESOURCEFUL_TOOLS_GROUP)));
+		Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "sand_single"), new BlockItem(SAND_SINGLE, new Item.Settings()));
+		Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "sand_double"), new BlockItem(SAND_DOUBLE, new Item.Settings()));
+		Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "sand_triple"), new BlockItem(SAND_TRIPLE, new Item.Settings()));
 		
-		Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "cobblestone_single"), new BlockItem(COBBLESTONE_SINGLE, new Item.Settings().group(ResourcefulTools.RESOURCEFUL_TOOLS_GROUP)));
-		Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "cobblestone_double"), new BlockItem(COBBLESTONE_DOUBLE, new Item.Settings().group(ResourcefulTools.RESOURCEFUL_TOOLS_GROUP)));
-		Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "cobblestone_triple"), new BlockItem(COBBLESTONE_TRIPLE, new Item.Settings().group(ResourcefulTools.RESOURCEFUL_TOOLS_GROUP)));
+		Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "cobblestone_single"), new BlockItem(COBBLESTONE_SINGLE, new Item.Settings()));
+		Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "cobblestone_double"), new BlockItem(COBBLESTONE_DOUBLE, new Item.Settings()));
+		Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "cobblestone_triple"), new BlockItem(COBBLESTONE_TRIPLE, new Item.Settings()));
 
-		Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "stone_single"), new BlockItem(STONE_SINGLE, new Item.Settings().group(ResourcefulTools.RESOURCEFUL_TOOLS_GROUP)));
-		Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "stone_double"), new BlockItem(STONE_DOUBLE, new Item.Settings().group(ResourcefulTools.RESOURCEFUL_TOOLS_GROUP)));
-		Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "stone_triple"), new BlockItem(STONE_TRIPLE, new Item.Settings().group(ResourcefulTools.RESOURCEFUL_TOOLS_GROUP)));
+		Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "stone_single"), new BlockItem(STONE_SINGLE, new Item.Settings()));
+		Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "stone_double"), new BlockItem(STONE_DOUBLE, new Item.Settings()));
+		Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "stone_triple"), new BlockItem(STONE_TRIPLE, new Item.Settings()));
 
-		Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "andesite_single"), new BlockItem(ANDESITE_SINGLE, new Item.Settings().group(ResourcefulTools.RESOURCEFUL_TOOLS_GROUP)));
-		Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "andesite_double"), new BlockItem(ANDESITE_DOUBLE, new Item.Settings().group(ResourcefulTools.RESOURCEFUL_TOOLS_GROUP)));
-		Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "andesite_triple"), new BlockItem(ANDESITE_TRIPLE, new Item.Settings().group(ResourcefulTools.RESOURCEFUL_TOOLS_GROUP)));
+		Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "andesite_single"), new BlockItem(ANDESITE_SINGLE, new Item.Settings()));
+		Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "andesite_double"), new BlockItem(ANDESITE_DOUBLE, new Item.Settings()));
+		Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "andesite_triple"), new BlockItem(ANDESITE_TRIPLE, new Item.Settings()));
 
-		Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "diorite_single"), new BlockItem(DIORITE_SINGLE, new Item.Settings().group(ResourcefulTools.RESOURCEFUL_TOOLS_GROUP)));
-		Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "diorite_double"), new BlockItem(DIORITE_DOUBLE, new Item.Settings().group(ResourcefulTools.RESOURCEFUL_TOOLS_GROUP)));
-		Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "diorite_triple"), new BlockItem(DIORITE_TRIPLE, new Item.Settings().group(ResourcefulTools.RESOURCEFUL_TOOLS_GROUP)));
+		Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "diorite_single"), new BlockItem(DIORITE_SINGLE, new Item.Settings()));
+		Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "diorite_double"), new BlockItem(DIORITE_DOUBLE, new Item.Settings()));
+		Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "diorite_triple"), new BlockItem(DIORITE_TRIPLE, new Item.Settings()));
 
-		Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "granite_single"), new BlockItem(GRANITE_SINGLE, new Item.Settings().group(ResourcefulTools.RESOURCEFUL_TOOLS_GROUP)));
-		Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "granite_double"), new BlockItem(GRANITE_DOUBLE, new Item.Settings().group(ResourcefulTools.RESOURCEFUL_TOOLS_GROUP)));
-		Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "granite_triple"), new BlockItem(GRANITE_TRIPLE, new Item.Settings().group(ResourcefulTools.RESOURCEFUL_TOOLS_GROUP)));
+		Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "granite_single"), new BlockItem(GRANITE_SINGLE, new Item.Settings()));
+		Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "granite_double"), new BlockItem(GRANITE_DOUBLE, new Item.Settings()));
+		Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "granite_triple"), new BlockItem(GRANITE_TRIPLE, new Item.Settings()));
 
-		Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "netherrack_single"), new BlockItem(NETHERRACK_SINGLE, new Item.Settings().group(ResourcefulTools.RESOURCEFUL_TOOLS_GROUP)));
-		Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "netherrack_double"), new BlockItem(NETHERRACK_DOUBLE, new Item.Settings().group(ResourcefulTools.RESOURCEFUL_TOOLS_GROUP)));
-		Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "netherrack_triple"), new BlockItem(NETHERRACK_TRIPLE, new Item.Settings().group(ResourcefulTools.RESOURCEFUL_TOOLS_GROUP)));
+		Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "netherrack_single"), new BlockItem(NETHERRACK_SINGLE, new Item.Settings()));
+		Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "netherrack_double"), new BlockItem(NETHERRACK_DOUBLE, new Item.Settings()));
+		Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "netherrack_triple"), new BlockItem(NETHERRACK_TRIPLE, new Item.Settings()));
 
-		Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "cobbled_deepslate_single"), new BlockItem(COBBLED_DEEPSLATE_SINGLE, new Item.Settings().group(ResourcefulTools.RESOURCEFUL_TOOLS_GROUP)));
-		Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "cobbled_deepslate_double"), new BlockItem(COBBLED_DEEPSLATE_DOUBLE, new Item.Settings().group(ResourcefulTools.RESOURCEFUL_TOOLS_GROUP)));
-		Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "cobbled_deepslate_triple"), new BlockItem(COBBLED_DEEPSLATE_TRIPLE , new Item.Settings().group(ResourcefulTools.RESOURCEFUL_TOOLS_GROUP)));
+		Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "cobbled_deepslate_single"), new BlockItem(COBBLED_DEEPSLATE_SINGLE, new Item.Settings()));
+		Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "cobbled_deepslate_double"), new BlockItem(COBBLED_DEEPSLATE_DOUBLE, new Item.Settings()));
+		Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "cobbled_deepslate_triple"), new BlockItem(COBBLED_DEEPSLATE_TRIPLE , new Item.Settings()));
 
-		Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "tuff_single"), new BlockItem(TUFF_SINGLE, new Item.Settings().group(ResourcefulTools.RESOURCEFUL_TOOLS_GROUP)));
-		Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "tuff_double"), new BlockItem(TUFF_DOUBLE, new Item.Settings().group(ResourcefulTools.RESOURCEFUL_TOOLS_GROUP)));
-		Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "tuff_triple"), new BlockItem(TUFF_TRIPLE, new Item.Settings().group(ResourcefulTools.RESOURCEFUL_TOOLS_GROUP)));
+		Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "tuff_single"), new BlockItem(TUFF_SINGLE, new Item.Settings()));
+		Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "tuff_double"), new BlockItem(TUFF_DOUBLE, new Item.Settings()));
+		Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "tuff_triple"), new BlockItem(TUFF_TRIPLE, new Item.Settings()));
 
-		Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "basalt_single"), new BlockItem(BASALT_SINGLE, new Item.Settings().group(ResourcefulTools.RESOURCEFUL_TOOLS_GROUP)));
-		Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "basalt_double"), new BlockItem(BASALT_DOUBLE, new Item.Settings().group(ResourcefulTools.RESOURCEFUL_TOOLS_GROUP)));
-		Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "basalt_triple"), new BlockItem(BASALT_TRIPLE, new Item.Settings().group(ResourcefulTools.RESOURCEFUL_TOOLS_GROUP)));
+		Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "basalt_single"), new BlockItem(BASALT_SINGLE, new Item.Settings()));
+		Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "basalt_double"), new BlockItem(BASALT_DOUBLE, new Item.Settings()));
+		Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "basalt_triple"), new BlockItem(BASALT_TRIPLE, new Item.Settings()));
 
-		Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "lavaspring"), new BlockItem(LAVASPRING, new Item.Settings().group(ResourcefulTools.RESOURCEFUL_TOOLS_GROUP)));
-		Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "wellspring"), new BlockItem(WELLSPRING, new Item.Settings().group(ResourcefulTools.RESOURCEFUL_TOOLS_GROUP)));
+		Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "lavaspring"), new BlockItem(LAVASPRING, new Item.Settings()));
+		Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "wellspring"), new BlockItem(WELLSPRING, new Item.Settings()));
 	}
 }

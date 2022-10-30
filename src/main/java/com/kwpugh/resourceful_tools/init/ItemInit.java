@@ -22,53 +22,53 @@ public class ItemInit
 	public static final ToolMaterial IRON_TOOL_MATERIAL = new IronToolMaterial();
 	public static final ToolMaterial COPPER_TOOL_MATERIAL = new CopperToolMaterial();
 
-	public static final Item HOOK_KNIFE = new HookKnife(new Item.Settings().maxDamage(ironDurability).group(ResourcefulTools.RESOURCEFUL_TOOLS_GROUP));
-	public static final Item HOOK_KNIFE_COPPER = new HookKnife(new Item.Settings().maxDamage(CopperDurability).group(ResourcefulTools.RESOURCEFUL_TOOLS_GROUP));
-	public static final Item TREE_TRIMMER = new TreeTrimmer(IRON_TOOL_MATERIAL, 0, -2.8F, new Item.Settings().group(ResourcefulTools.RESOURCEFUL_TOOLS_GROUP));
-	public static final Item TREE_TRIMMER_COPPER = new TreeTrimmer(COPPER_TOOL_MATERIAL, 0, -2.8F, new Item.Settings().group(ResourcefulTools.RESOURCEFUL_TOOLS_GROUP));
-	public static final Item HAND_TILLER = new HandTiller(IRON_TOOL_MATERIAL, 0.0F, -2.8F, new Item.Settings().group(ResourcefulTools.RESOURCEFUL_TOOLS_GROUP));
-	public static final Item HAND_TILLER_COPPER = new HandTiller(COPPER_TOOL_MATERIAL, 0.0F, -2.8F, new Item.Settings().group(ResourcefulTools.RESOURCEFUL_TOOLS_GROUP));
-	public static final Item CLAM_DIGGER = new ClamDigger(IRON_TOOL_MATERIAL, 0.0F, -2.8F, new Item.Settings().group(ResourcefulTools.RESOURCEFUL_TOOLS_GROUP));
-	public static final Item CLAM_DIGGER_COPPER = new ClamDigger(COPPER_TOOL_MATERIAL, 0.0F, -2.8F, new Item.Settings().group(ResourcefulTools.RESOURCEFUL_TOOLS_GROUP));
-	public static final Item HAND_PICK = new HandPick(IRON_TOOL_MATERIAL, 0, -2.8F, new Item.Settings().group(ResourcefulTools.RESOURCEFUL_TOOLS_GROUP));
-	public static final Item HAND_PICK_COPPER = new HandPick(COPPER_TOOL_MATERIAL, 0, -2.8F, new Item.Settings().group(ResourcefulTools.RESOURCEFUL_TOOLS_GROUP));
-	public static final Item GLASS_PLACER = new GlassPlacer(new Item.Settings().maxCount(1).maxDamage(64).group(ResourcefulTools.RESOURCEFUL_TOOLS_GROUP));
-	public static final Item TRASH_CAN = new TrashCan(new Item.Settings().group(ResourcefulTools.RESOURCEFUL_TOOLS_GROUP));
+	public static final Item HOOK_KNIFE = new HookKnife(new Item.Settings().maxDamage(ironDurability));
+	public static final Item HOOK_KNIFE_COPPER = new HookKnife(new Item.Settings().maxDamage(CopperDurability));
+	public static final Item TREE_TRIMMER = new TreeTrimmer(IRON_TOOL_MATERIAL, 0, -2.8F, new Item.Settings());
+	public static final Item TREE_TRIMMER_COPPER = new TreeTrimmer(COPPER_TOOL_MATERIAL, 0, -2.8F, new Item.Settings());
+	public static final Item HAND_TILLER = new HandTiller(IRON_TOOL_MATERIAL, 0.0F, -2.8F, new Item.Settings());
+	public static final Item HAND_TILLER_COPPER = new HandTiller(COPPER_TOOL_MATERIAL, 0.0F, -2.8F, new Item.Settings());
+	public static final Item CLAM_DIGGER = new ClamDigger(IRON_TOOL_MATERIAL, 0.0F, -2.8F, new Item.Settings());
+	public static final Item CLAM_DIGGER_COPPER = new ClamDigger(COPPER_TOOL_MATERIAL, 0.0F, -2.8F, new Item.Settings());
+	public static final Item HAND_PICK = new HandPick(IRON_TOOL_MATERIAL, 0, -2.8F, new Item.Settings());
+	public static final Item HAND_PICK_COPPER = new HandPick(COPPER_TOOL_MATERIAL, 0, -2.8F, new Item.Settings());
+	public static final Item GLASS_PLACER = new GlassPlacer(new Item.Settings().maxCount(1).maxDamage(64));
+	public static final Item TRASH_CAN = new TrashCan(new Item.Settings());
 
-	public static final Item CRACK_HAMMER_COPPER = new CrackHammer(new Item.Settings().maxDamage(copperHammerDurability).group(ResourcefulTools.RESOURCEFUL_TOOLS_GROUP));
-	public static final Item CRACK_HAMMER = new CrackHammer(new Item.Settings().maxDamage(ironHammerDurability).group(ResourcefulTools.RESOURCEFUL_TOOLS_GROUP));
-	public static final Item DIAMOND_CRACK_HAMMER = new CrackHammer(new Item.Settings().maxDamage(diamondHammerDurability).group(ResourcefulTools.RESOURCEFUL_TOOLS_GROUP));
-	public static final Item COPPER_NUGGET = new Item(new Item.Settings().group(ResourcefulTools.RESOURCEFUL_TOOLS_GROUP));
-	public static final Item POWDER_IRON = new Item(new Item.Settings().group(ResourcefulTools.RESOURCEFUL_TOOLS_GROUP));
-	public static final Item POWDER_CARBON = new Item(new Item.Settings().group(ResourcefulTools.RESOURCEFUL_TOOLS_GROUP));
-	public static final Item POWDER_GOLD = new Item(new Item.Settings().group(ResourcefulTools.RESOURCEFUL_TOOLS_GROUP));
-	public static final Item POWDER_EMERALD = new Item(new Item.Settings().group(ResourcefulTools.RESOURCEFUL_TOOLS_GROUP));
-	public static final Item POWDER_DIAMOND = new Item(new Item.Settings().group(ResourcefulTools.RESOURCEFUL_TOOLS_GROUP));
-	public static final Item POWDER_NETHERITE = new Item(new Item.Settings().group(ResourcefulTools.RESOURCEFUL_TOOLS_GROUP));
-	public static final Item POWDER_COPPER = new Item(new Item.Settings().group(ResourcefulTools.RESOURCEFUL_TOOLS_GROUP));
-	public static final Item POWDER_TIN = new Item(new Item.Settings().group(ResourcefulTools.RESOURCEFUL_TOOLS_GROUP));
-	public static final Item POWDER_STEEL = new Item(new Item.Settings().group(ResourcefulTools.RESOURCEFUL_TOOLS_GROUP));
+	public static final Item CRACK_HAMMER_COPPER = new CrackHammer(new Item.Settings().maxDamage(copperHammerDurability));
+	public static final Item CRACK_HAMMER = new CrackHammer(new Item.Settings().maxDamage(ironHammerDurability));
+	public static final Item DIAMOND_CRACK_HAMMER = new CrackHammer(new Item.Settings().maxDamage(diamondHammerDurability));
+	public static final Item COPPER_NUGGET = new Item(new Item.Settings());
+	public static final Item POWDER_IRON = new Item(new Item.Settings());
+	public static final Item POWDER_CARBON = new Item(new Item.Settings());
+	public static final Item POWDER_GOLD = new Item(new Item.Settings());
+	public static final Item POWDER_EMERALD = new Item(new Item.Settings());
+	public static final Item POWDER_DIAMOND = new Item(new Item.Settings());
+	public static final Item POWDER_NETHERITE = new Item(new Item.Settings());
+	public static final Item POWDER_COPPER = new Item(new Item.Settings());
+	public static final Item POWDER_TIN = new Item(new Item.Settings());
+	public static final Item POWDER_STEEL = new Item(new Item.Settings());
 
-	public static final Item POWDER_SALTPETER = new Item(new Item.Settings().group(ResourcefulTools.RESOURCEFUL_TOOLS_GROUP));
-	public static final Item POWDER_SULFUR = new Item(new Item.Settings().group(ResourcefulTools.RESOURCEFUL_TOOLS_GROUP));
-	public static final Item BONE_FRAGMENT = new Item(new Item.Settings().group(ResourcefulTools.RESOURCEFUL_TOOLS_GROUP));
-	public static final Item BIT_O_SLIME = new Item(new Item.Settings().group(ResourcefulTools.RESOURCEFUL_TOOLS_GROUP));
-	public static final Item SMALL_BLAZE_POWDER = new Item(new Item.Settings().group(ResourcefulTools.RESOURCEFUL_TOOLS_GROUP));
-	public static final Item PEARL_FRAGMENT = new Item(new Item.Settings().group(ResourcefulTools.RESOURCEFUL_TOOLS_GROUP));
-	public static final Item GHAST_TEAR_FRAGMENT = new Item(new Item.Settings().group(ResourcefulTools.RESOURCEFUL_TOOLS_GROUP));
-	public static final Item NETHER_STAR_FRAGMENT = new Item(new Item.Settings().group(ResourcefulTools.RESOURCEFUL_TOOLS_GROUP));
-	public static final Item NETHERITE_FRAGMENT = new Item(new Item.Settings().group(ResourcefulTools.RESOURCEFUL_TOOLS_GROUP));
+	public static final Item POWDER_SALTPETER = new Item(new Item.Settings());
+	public static final Item POWDER_SULFUR = new Item(new Item.Settings());
+	public static final Item BONE_FRAGMENT = new Item(new Item.Settings());
+	public static final Item BIT_O_SLIME = new Item(new Item.Settings());
+	public static final Item SMALL_BLAZE_POWDER = new Item(new Item.Settings());
+	public static final Item PEARL_FRAGMENT = new Item(new Item.Settings());
+	public static final Item GHAST_TEAR_FRAGMENT = new Item(new Item.Settings());
+	public static final Item NETHER_STAR_FRAGMENT = new Item(new Item.Settings());
+	public static final Item NETHERITE_FRAGMENT = new Item(new Item.Settings());
 
-	public static final Item BAMBOO_SHEET = new Item(new Item.Settings().group(ResourcefulTools.RESOURCEFUL_TOOLS_GROUP));
-	public static final Item LARGE_BAMBOO_SHEET = new Item(new Item.Settings().group(ResourcefulTools.RESOURCEFUL_TOOLS_GROUP));
-	public static final Item REAM_OF_PAPER = new Item(new Item.Settings().group(ResourcefulTools.RESOURCEFUL_TOOLS_GROUP));
+	public static final Item BAMBOO_SHEET = new Item(new Item.Settings());
+	public static final Item LARGE_BAMBOO_SHEET = new Item(new Item.Settings());
+	public static final Item REAM_OF_PAPER = new Item(new Item.Settings());
 
-	public static final Item CLAM = new Item(new Item.Settings().group(ResourcefulTools.RESOURCEFUL_TOOLS_GROUP));
-	public static final Item RAW_CLAM = new Item(new Item.Settings().group(ResourcefulTools.RESOURCEFUL_TOOLS_GROUP));
-	public static final Item COOKED_CLAM = new Item(new Item.Settings().food(FoodList.cooked_clam).group(ResourcefulTools.RESOURCEFUL_TOOLS_GROUP));
-	public static final Item JERKY = new Item(new Item.Settings().food(FoodList.jerky).group(ResourcefulTools.RESOURCEFUL_TOOLS_GROUP));
-	public static final Item ACORN = new Item(new Item.Settings().food(FoodList.acorn).group(ResourcefulTools.RESOURCEFUL_TOOLS_GROUP));
-	public static final Item ACORN_DARK = new Item(new Item.Settings().food(FoodList.acorn_dark).group(ResourcefulTools.RESOURCEFUL_TOOLS_GROUP));
+	public static final Item CLAM = new Item(new Item.Settings());
+	public static final Item RAW_CLAM = new Item(new Item.Settings());
+	public static final Item COOKED_CLAM = new Item(new Item.Settings().food(FoodList.cooked_clam));
+	public static final Item JERKY = new Item(new Item.Settings().food(FoodList.jerky));
+	public static final Item ACORN = new Item(new Item.Settings().food(FoodList.acorn));
+	public static final Item ACORN_DARK = new Item(new Item.Settings().food(FoodList.acorn_dark));
 
 	public static void registerItems()
 	{
