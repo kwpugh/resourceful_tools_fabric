@@ -6,6 +6,7 @@ import net.minecraft.enchantment.Enchantment;
 import net.minecraft.enchantment.EnchantmentTarget;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.registry.Registries;
 import net.minecraft.util.registry.Registry;
 
 public class EnchantmentInit
@@ -14,6 +15,6 @@ public class EnchantmentInit
 
     public static void registerEnchantments()
     {
-        Registry.register(Registry.ENCHANTMENT, new Identifier(ResourcefulTools.MOD_ID, "resourcefulness"), RESOURCEFULNESS);
+        Registry.register(Registries.ENCHANTMENT, new Identifier(ResourcefulTools.MOD_ID, "resourcefulness"), RESOURCEFULNESS);
     }
 }

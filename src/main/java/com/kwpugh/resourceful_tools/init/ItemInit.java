@@ -8,6 +8,7 @@ import com.kwpugh.resourceful_tools.materials.IronToolMaterial;
 import net.minecraft.item.Item;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.registry.Registries;
 import net.minecraft.util.registry.Registry;
 
 public class ItemInit
@@ -72,53 +73,53 @@ public class ItemInit
 
 	public static void registerItems()
 	{
-		Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "hook_knife_copper"), HOOK_KNIFE_COPPER);
-		Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "hook_knife"), HOOK_KNIFE);
-		Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "tree_trimmer_copper"), TREE_TRIMMER_COPPER);
-		Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "tree_trimmer"), TREE_TRIMMER);
-		Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "hand_tiller_copper"), HAND_TILLER_COPPER);
-		Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "hand_tiller"), HAND_TILLER);
-		Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "clam_digger_copper"), CLAM_DIGGER_COPPER);
-		Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "clam_digger"), CLAM_DIGGER);
-		Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "hand_pick_copper"), HAND_PICK_COPPER);
-		Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "hand_pick"), HAND_PICK);
-		Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "glass_placer"), GLASS_PLACER);
-		Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "crack_hammer_copper"), CRACK_HAMMER_COPPER);
-		Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "crack_hammer"), CRACK_HAMMER);
-		Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "crack_hammer_diamond"), DIAMOND_CRACK_HAMMER);
+		Registry.register(Registries.ITEM, new Identifier(ResourcefulTools.MOD_ID, "hook_knife_copper"), HOOK_KNIFE_COPPER);
+		Registry.register(Registries.ITEM, new Identifier(ResourcefulTools.MOD_ID, "hook_knife"), HOOK_KNIFE);
+		Registry.register(Registries.ITEM, new Identifier(ResourcefulTools.MOD_ID, "tree_trimmer_copper"), TREE_TRIMMER_COPPER);
+		Registry.register(Registries.ITEM, new Identifier(ResourcefulTools.MOD_ID, "tree_trimmer"), TREE_TRIMMER);
+		Registry.register(Registries.ITEM, new Identifier(ResourcefulTools.MOD_ID, "hand_tiller_copper"), HAND_TILLER_COPPER);
+		Registry.register(Registries.ITEM, new Identifier(ResourcefulTools.MOD_ID, "hand_tiller"), HAND_TILLER);
+		Registry.register(Registries.ITEM, new Identifier(ResourcefulTools.MOD_ID, "clam_digger_copper"), CLAM_DIGGER_COPPER);
+		Registry.register(Registries.ITEM, new Identifier(ResourcefulTools.MOD_ID, "clam_digger"), CLAM_DIGGER);
+		Registry.register(Registries.ITEM, new Identifier(ResourcefulTools.MOD_ID, "hand_pick_copper"), HAND_PICK_COPPER);
+		Registry.register(Registries.ITEM, new Identifier(ResourcefulTools.MOD_ID, "hand_pick"), HAND_PICK);
+		Registry.register(Registries.ITEM, new Identifier(ResourcefulTools.MOD_ID, "glass_placer"), GLASS_PLACER);
+		Registry.register(Registries.ITEM, new Identifier(ResourcefulTools.MOD_ID, "crack_hammer_copper"), CRACK_HAMMER_COPPER);
+		Registry.register(Registries.ITEM, new Identifier(ResourcefulTools.MOD_ID, "crack_hammer"), CRACK_HAMMER);
+		Registry.register(Registries.ITEM, new Identifier(ResourcefulTools.MOD_ID, "crack_hammer_diamond"), DIAMOND_CRACK_HAMMER);
 
-		Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "copper_nugget"), COPPER_NUGGET);
-		Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "powder_carbon"), POWDER_CARBON);
-		Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "powder_iron"), POWDER_IRON);
-		Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "powder_gold"), POWDER_GOLD);
-		Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "powder_emerald"), POWDER_EMERALD);
-		Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "powder_diamond"), POWDER_DIAMOND);
-		Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "powder_netherite"), POWDER_NETHERITE);
-		Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "powder_copper"), POWDER_COPPER);
-		Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "powder_tin"), POWDER_TIN);
-		Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "powder_steel"), POWDER_STEEL);
+		Registry.register(Registries.ITEM, new Identifier(ResourcefulTools.MOD_ID, "copper_nugget"), COPPER_NUGGET);
+		Registry.register(Registries.ITEM, new Identifier(ResourcefulTools.MOD_ID, "powder_carbon"), POWDER_CARBON);
+		Registry.register(Registries.ITEM, new Identifier(ResourcefulTools.MOD_ID, "powder_iron"), POWDER_IRON);
+		Registry.register(Registries.ITEM, new Identifier(ResourcefulTools.MOD_ID, "powder_gold"), POWDER_GOLD);
+		Registry.register(Registries.ITEM, new Identifier(ResourcefulTools.MOD_ID, "powder_emerald"), POWDER_EMERALD);
+		Registry.register(Registries.ITEM, new Identifier(ResourcefulTools.MOD_ID, "powder_diamond"), POWDER_DIAMOND);
+		Registry.register(Registries.ITEM, new Identifier(ResourcefulTools.MOD_ID, "powder_netherite"), POWDER_NETHERITE);
+		Registry.register(Registries.ITEM, new Identifier(ResourcefulTools.MOD_ID, "powder_copper"), POWDER_COPPER);
+		Registry.register(Registries.ITEM, new Identifier(ResourcefulTools.MOD_ID, "powder_tin"), POWDER_TIN);
+		Registry.register(Registries.ITEM, new Identifier(ResourcefulTools.MOD_ID, "powder_steel"), POWDER_STEEL);
 
-		Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "powder_saltpeter"), POWDER_SALTPETER);
-		Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "powder_sulfur"), POWDER_SULFUR);
-		Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "bone_fragment"), BONE_FRAGMENT);
-		Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "bit_o_slime"), BIT_O_SLIME);
-		Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "small_blaze_powder"), SMALL_BLAZE_POWDER);
-		Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "pearl_fragment"), PEARL_FRAGMENT);
-		Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "ghast_tear_fragment"), GHAST_TEAR_FRAGMENT);
-		Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "nether_star_fragment"), NETHER_STAR_FRAGMENT);
-		Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "netherite_fragment"), NETHERITE_FRAGMENT);
+		Registry.register(Registries.ITEM, new Identifier(ResourcefulTools.MOD_ID, "powder_saltpeter"), POWDER_SALTPETER);
+		Registry.register(Registries.ITEM, new Identifier(ResourcefulTools.MOD_ID, "powder_sulfur"), POWDER_SULFUR);
+		Registry.register(Registries.ITEM, new Identifier(ResourcefulTools.MOD_ID, "bone_fragment"), BONE_FRAGMENT);
+		Registry.register(Registries.ITEM, new Identifier(ResourcefulTools.MOD_ID, "bit_o_slime"), BIT_O_SLIME);
+		Registry.register(Registries.ITEM, new Identifier(ResourcefulTools.MOD_ID, "small_blaze_powder"), SMALL_BLAZE_POWDER);
+		Registry.register(Registries.ITEM, new Identifier(ResourcefulTools.MOD_ID, "pearl_fragment"), PEARL_FRAGMENT);
+		Registry.register(Registries.ITEM, new Identifier(ResourcefulTools.MOD_ID, "ghast_tear_fragment"), GHAST_TEAR_FRAGMENT);
+		Registry.register(Registries.ITEM, new Identifier(ResourcefulTools.MOD_ID, "nether_star_fragment"), NETHER_STAR_FRAGMENT);
+		Registry.register(Registries.ITEM, new Identifier(ResourcefulTools.MOD_ID, "netherite_fragment"), NETHERITE_FRAGMENT);
 	 
-		Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "bamboo_sheet"), BAMBOO_SHEET);
-		Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "large_bamboo_sheet"), LARGE_BAMBOO_SHEET);
-		Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "ream_of_paper"), REAM_OF_PAPER);
+		Registry.register(Registries.ITEM, new Identifier(ResourcefulTools.MOD_ID, "bamboo_sheet"), BAMBOO_SHEET);
+		Registry.register(Registries.ITEM, new Identifier(ResourcefulTools.MOD_ID, "large_bamboo_sheet"), LARGE_BAMBOO_SHEET);
+		Registry.register(Registries.ITEM, new Identifier(ResourcefulTools.MOD_ID, "ream_of_paper"), REAM_OF_PAPER);
 
-		Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "clam"), CLAM);
-		Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "raw_clam"), RAW_CLAM);
-		Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "cooked_clam"), COOKED_CLAM);
-		Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "jerky"), JERKY);
-		Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "acorn"), ACORN);
-		Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "acorn_dark"), ACORN_DARK);
+		Registry.register(Registries.ITEM, new Identifier(ResourcefulTools.MOD_ID, "clam"), CLAM);
+		Registry.register(Registries.ITEM, new Identifier(ResourcefulTools.MOD_ID, "raw_clam"), RAW_CLAM);
+		Registry.register(Registries.ITEM, new Identifier(ResourcefulTools.MOD_ID, "cooked_clam"), COOKED_CLAM);
+		Registry.register(Registries.ITEM, new Identifier(ResourcefulTools.MOD_ID, "jerky"), JERKY);
+		Registry.register(Registries.ITEM, new Identifier(ResourcefulTools.MOD_ID, "acorn"), ACORN);
+		Registry.register(Registries.ITEM, new Identifier(ResourcefulTools.MOD_ID, "acorn_dark"), ACORN_DARK);
 
-		Registry.register(Registry.ITEM, new Identifier(ResourcefulTools.MOD_ID, "trash_can"), TRASH_CAN);
+		Registry.register(Registries.ITEM, new Identifier(ResourcefulTools.MOD_ID, "trash_can"), TRASH_CAN);
 	} 
 }
